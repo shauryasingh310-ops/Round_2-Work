@@ -68,7 +68,8 @@ async function fetchDiseaseDataFromThisHost(): Promise<DiseaseDataApiResponse | 
 
 function redirectToBot(req: Request): NextResponse {
   const url = new URL('/api/telegram/bot', req.url)
-  return NextResponse.redirect(url)
+  url.searchParams.set('direct', '1')
+  return NextResponse.redirect(url, { status: 307 })
 }
 
 function generateCode(): string {
