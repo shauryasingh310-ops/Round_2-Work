@@ -1,0 +1,24 @@
+# Repo root ignores (monorepo-ish)
+
+# dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env
+.env*
+
+# Vercel
+.vercel/
+
+# OS / editor
+.DS_Store
+Thumbs.db

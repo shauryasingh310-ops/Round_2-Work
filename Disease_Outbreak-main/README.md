@@ -1,5 +1,25 @@
 # Disease Outbreak Dashboard
 
+## Quick start (dev)
+
+1) Create `Disease_Outbreak-main/.env.local` (copy from `Disease_Outbreak-main/.env.local.example`).
+
+- To get live risk data: set `WEATHER_API_KEY`.
+- To enable ML analysis: set `OPENROUTER_API_KEY` (server-side).
+
+2) From the `Disease_Outbreak-main` folder:
+
+```bash
+pnpm install
+pnpm dev
+```
+
+3) Verify endpoints:
+
+- `GET http://localhost:3000/api/disease-data`
+- `GET http://localhost:3000/api/predictions`
+- `POST http://localhost:3000/api/predictions` (requires `OPENROUTER_API_KEY`)
+
 ## A. Technical Flows
 
 ### 1. High-Level System Flow (DFD Level 1)
@@ -313,3 +333,12 @@ Goal
 Organize a stable environment, eliminate scalability bottlenecks and accelerate development- without rushing the product to the production.
 ---
 
+#   E p i G a u r d 
+ 
+ #   E p i G a u r d 
+ 
+ #   E p i G a u r d 
+ 
+ #   E p i G a u r d 
+ 
+ 

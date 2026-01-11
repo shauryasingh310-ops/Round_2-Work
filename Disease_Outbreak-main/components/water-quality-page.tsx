@@ -1,5 +1,6 @@
 "use client"
-import { ALL_STATES } from "@/lib/all-states"
+import { useEffect, useMemo, useState } from "react"
+import { useTranslation } from "react-i18next"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -8,19 +9,53 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 import { AlertTriangle, Droplet, MapPin } from "lucide-react"
 
-interface WaterSource {
-  id: string
-  name: string
-  type: "river" | "well" | "tap" | "reservoir"
-  region: string
-  ph_level: number
-  bacterial_count: number
-  contamination_level: "safe" | "warning" | "danger"
-  last_tested: string
-  quality_score: number
+type WaterQualityLabel = "Good" | "Fair" | "Poor" | "Unknown"
+
+type ContaminationLevel = "safe" | "warning" | "danger"
+
+type DiseaseDataApiResponse = {
+  updatedAt: string
+  states: Array<{
+    state: string
+    waterRisk?: number
+    drivers?: string[]
+    environmentalFactors?: {
+      waterQuality?: WaterQualityLabel
+    }
+    water?: {
+      station_code?: string
+      station_name?: string
+      state_name?: string
+      district_name?: string
+      quality_parameter?: string
+      value?: string
+    } | null
+  }>
+  meta?: {
+    waterProvider?: string
+    waterKeyPresent?: boolean
+    waterRecords?: number
+    weatherProvider?: string
+    weatherKeyPresent?: boolean
+  }
 }
 
-interface ContaminationEvent {
+type WaterSource = {
+  id: string
+  name: string
+  type: "river" | "well" | "tap" | "reservoir" | "source"
+  region: string
+  contamination_level: "safe" | "warning" | "danger"
+  quality_label: WaterQualityLabel
+  quality_score?: number
+  water_risk?: number
+  measurement?: string
+  measurement_value?: string
+  last_tested?: string
+  drivers?: string[]
+}
+
+type ContaminationEvent = {
   id: string
   source: string
   region: string
@@ -30,206 +65,209 @@ interface ContaminationEvent {
   health_risk: string
 }
 
+type EventHistoryItem = {
+  key: string
+  event: ContaminationEvent
+  firstSeenAt: number
+  lastSeenAt: number
+}
+
+const EVENT_HISTORY_KEY = "waterQualityEventHistory:v1"
+
+function parseNumericMeasurement(raw: string | null | undefined): number {
+  if (!raw) return Number.NaN
+  const cleaned = raw.toString().trim().replace(/,/g, "")
+  if (!cleaned) return Number.NaN
+  if (/^(na|n\/a|null|bdl|belowdetection|nd|notdetected|--)$/i.test(cleaned)) return Number.NaN
+  const withoutInequality = cleaned.replace(/^[<>]=?\s*/, "")
+  const num = Number.parseFloat(withoutInequality)
+  return Number.isFinite(num) ? num : Number.NaN
+}
+
+function inferSourceType(name: string): WaterSource["type"] {
+  const v = name.toLowerCase()
+  if (v.includes("reservoir")) return "reservoir"
+  if (v.includes("river")) return "river"
+  if (v.includes("well")) return "well"
+  if (v.includes("tap")) return "tap"
+  return "source"
+}
+
+function labelToContaminationLevel(label: WaterQualityLabel): ContaminationLevel {
+  if (label === "Poor") return "danger"
+  if (label === "Fair") return "warning"
+  if (label === "Good") return "safe"
+  return "warning"
+}
+
+function toEventSeverity(level: ContaminationLevel): ContaminationEvent["severity"] {
+  if (level === "danger") return "critical"
+  if (level === "warning") return "high"
+  return "low"
+}
+
+function safeParseJson<T>(value: string | null, fallback: T): T {
+  if (!value) return fallback
+  try {
+    return JSON.parse(value) as T
+  } catch {
+    return fallback
+  }
+}
+
 export function WaterQualityPage() {
-  const waterSources: WaterSource[] = [
-    {
-      id: "1",
-      name: "Brahmaputra River (Guwahati)",
-      type: "river",
-      region: "Assam",
-      ph_level: 7.2,
-      bacterial_count: 2800,
-      contamination_level: "danger",
-      last_tested: "2024-12-27",
-      quality_score: 35,
-    },
-    {
-      id: "2",
-      name: "Ganges River (Varanasi)",
-      type: "river",
-      region: "Uttar Pradesh",
-      ph_level: 6.9,
-      bacterial_count: 3200,
-      contamination_level: "danger",
-      last_tested: "2024-12-27",
-      quality_score: 28,
-    },
-    {
-      id: "3",
-      name: "Yamuna River (Delhi)",
-      type: "river",
-      region: "Delhi",
-      ph_level: 7.3,
-      bacterial_count: 2950,
-      contamination_level: "danger",
-      last_tested: "2024-12-27",
-      quality_score: 32,
-    },
-    {
-      id: "4",
-      name: "Godavari River (Telangana)",
-      type: "river",
-      region: "Telangana",
-      ph_level: 7.1,
-      bacterial_count: 1800,
-      contamination_level: "warning",
-      last_tested: "2024-12-27",
-      quality_score: 58,
-    },
-    {
-      id: "5",
-      name: "Jaintia Hills Public Well",
-      type: "well",
-      region: "Meghalaya",
-      ph_level: 6.8,
-      bacterial_count: 450,
-      contamination_level: "warning",
-      last_tested: "2024-12-27",
-      quality_score: 68,
-    },
-    {
-      id: "6",
-      name: "Chennai Municipal Tap",
-      type: "tap",
-      region: "Tamil Nadu",
-      ph_level: 7.0,
-      bacterial_count: 180,
-      contamination_level: "safe",
-      last_tested: "2024-12-27",
-      quality_score: 86,
-    },
-    {
-      id: "7",
-      name: "Imphal City Well System",
-      type: "well",
-      region: "Manipur",
-      ph_level: 6.5,
-      bacterial_count: 1950,
-      contamination_level: "danger",
-      last_tested: "2024-12-27",
-      quality_score: 42,
-    },
-    {
-      id: "8",
-      name: "Narmada Reservoir (Madhya Pradesh)",
-      type: "reservoir",
-      region: "Madhya Pradesh",
-      ph_level: 7.4,
-      bacterial_count: 920,
-      contamination_level: "warning",
-      last_tested: "2024-12-26",
-      quality_score: 65,
-    },
-    {
-      id: "9",
-      name: "Trivandrum Municipal Water",
-      type: "tap",
-      region: "Kerala",
-      ph_level: 6.9,
-      bacterial_count: 95,
-      contamination_level: "safe",
-      last_tested: "2024-12-27",
-      quality_score: 92,
-    },
-    {
-      id: "10",
-      name: "Kolkata Public Well System",
-      type: "well",
-      region: "West Bengal",
-      ph_level: 6.7,
-      bacterial_count: 1650,
-      contamination_level: "warning",
-      last_tested: "2024-12-27",
-      quality_score: 54,
-    },
-    {
-      id: "11",
-      name: "Mumbai Tap Water System",
-      type: "tap",
-      region: "Maharashtra",
-      ph_level: 7.2,
-      bacterial_count: 230,
-      contamination_level: "safe",
-      last_tested: "2024-12-27",
-      quality_score: 84,
-    },
-    {
-      id: "12",
-      name: "Bangalore Well Network",
-      type: "well",
-      region: "Karnataka",
-      ph_level: 7.1,
-      bacterial_count: 680,
-      contamination_level: "warning",
-      last_tested: "2024-12-27",
-      quality_score: 71,
-    },
-  ]
+  const { t } = useTranslation()
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+  const [updatedAt, setUpdatedAt] = useState<string>("")
+  const [waterProvider, setWaterProvider] = useState<string>("")
+  const [waterSources, setWaterSources] = useState<WaterSource[]>([])
+  const [qualityTrendData, setQualityTrendData] = useState<Array<{ date: string; score: number }>>([])
+  const [eventHistory, setEventHistory] = useState<EventHistoryItem[]>([])
 
-  const contaminationEvents: ContaminationEvent[] = [
-    {
-      id: "1",
-      source: "Brahmaputra River (Guwahati)",
-      region: "Assam",
-      date: "2024-12-27",
-      contaminant: "E. coli",
-      severity: "critical",
-      health_risk: "Acute diarrhea, cholera transmission",
-    },
-    {
-      id: "2",
-      source: "Ganges River (Varanasi)",
-      region: "Uttar Pradesh",
-      date: "2024-12-27",
-      contaminant: "Vibrio cholerae",
-      severity: "critical",
-      health_risk: "Cholera outbreak risk",
-    },
-    {
-      id: "3",
-      source: "Imphal City Well System",
-      region: "Manipur",
-      date: "2024-12-26",
-      contaminant: "Vibrio cholerae",
-      severity: "high",
-      health_risk: "Cholera outbreak risk",
-    },
-    {
-      id: "4",
-      source: "Yamuna River (Delhi)",
-      region: "Delhi",
-      date: "2024-12-26",
-      contaminant: "Salmonella typhi",
-      severity: "high",
-      health_risk: "Typhoid infection",
-    },
-    {
-      id: "5",
-      source: "Jaintia Hills Public Well",
-      region: "Meghalaya",
-      date: "2024-12-25",
-      contaminant: "Salmonella typhi",
-      severity: "medium",
-      health_risk: "Typhoid infection",
-    },
-  ]
+  useEffect(() => {
+    const stored = safeParseJson<EventHistoryItem[]>(
+      typeof window !== "undefined" ? window.localStorage.getItem(EVENT_HISTORY_KEY) : null,
+      [],
+    )
+    setEventHistory(Array.isArray(stored) ? stored : [])
+  }, [])
 
-  const qualityTrendData = [
-    { date: "Dec 19", score: 62 },
-    { date: "Dec 20", score: 58 },
-    { date: "Dec 21", score: 54 },
-    { date: "Dec 22", score: 50 },
-    { date: "Dec 23", score: 46 },
-    { date: "Dec 24", score: 42 },
-    { date: "Dec 25", score: 39 },
-    { date: "Dec 26", score: 36 },
-    { date: "Dec 27", score: 34 },
-  ]
+  useEffect(() => {
+    let active = true
+    let timer: any
 
-  const phDistributionData = waterSources.map((source) => ({
-    name: source.name.split("(")[0].trim().substring(0, 15),
-    ph: source.ph_level,
-  }))
+    const load = async () => {
+      try {
+        const res = await fetch("/api/disease-data", { cache: "no-store" })
+        const data = (await res.json().catch(() => null)) as DiseaseDataApiResponse | null
+        if (!res.ok) {
+          const msg = [data?.["error" as any], (data as any)?.message].filter(Boolean).join("\n")
+          throw new Error(msg || `Request failed (${res.status})`)
+        }
+
+        const rows = Array.isArray(data?.states) ? data!.states : []
+        const iso = typeof data?.updatedAt === "string" ? data.updatedAt : new Date().toISOString()
+        const updatedLabel = new Date(iso).toLocaleString()
+
+        const provider = typeof data?.meta?.waterProvider === "string" ? data.meta.waterProvider : ""
+        if (active) {
+          setUpdatedAt(updatedLabel)
+          setWaterProvider(provider)
+        }
+
+        const sources: WaterSource[] = rows
+          .filter((r) => r && r.state)
+          .map((r) => {
+            const label = (r.environmentalFactors?.waterQuality ?? "Unknown") as WaterQualityLabel
+            const level = labelToContaminationLevel(label)
+            const waterRisk = typeof r.waterRisk === "number" && Number.isFinite(r.waterRisk) ? r.waterRisk : undefined
+            const score = typeof waterRisk === "number" ? Math.max(0, Math.min(100, Math.round(100 - waterRisk))) : undefined
+
+            const stationName = r.water?.station_name ? String(r.water.station_name) : `${r.state} water source`
+            const measurement = r.water?.quality_parameter ? String(r.water.quality_parameter) : ""
+            const measurementValue = r.water?.value ? String(r.water.value) : ""
+
+            return {
+              id: r.water?.station_code ? String(r.water.station_code) : r.state,
+              name: stationName,
+              type: inferSourceType(stationName),
+              region: r.state,
+              contamination_level: level,
+              quality_label: label,
+              quality_score: score,
+              water_risk: waterRisk,
+              measurement,
+              measurement_value: measurementValue,
+              last_tested: updatedLabel,
+              drivers: Array.isArray(r.drivers) ? r.drivers.map(String) : [],
+            }
+          })
+          .filter((s) => Boolean(s.name))
+          .sort((a, b) => {
+            const order = { danger: 2, warning: 1, safe: 0 } as const
+            const byLevel = order[b.contamination_level] - order[a.contamination_level]
+            if (byLevel !== 0) return byLevel
+            return (a.quality_score ?? 101) - (b.quality_score ?? 101)
+          })
+
+        const scores = sources.map((s) => s.quality_score).filter((v): v is number => typeof v === "number")
+        const avgScore = scores.length ? Math.round(scores.reduce((sum, v) => sum + v, 0) / scores.length) : null
+
+        const now = Date.now()
+        const cutoff = now - 7 * 24 * 60 * 60 * 1000
+
+        const currentEvents: EventHistoryItem[] = sources
+          .filter((s) => s.contamination_level !== "safe")
+          .map((s) => {
+            const key = `${s.region}::${s.id}::${s.measurement ?? ""}::${s.measurement_value ?? ""}`
+            const contaminantParts = [s.measurement, s.measurement_value].filter(Boolean)
+            const contaminant = contaminantParts.length ? contaminantParts.join(": ") : "Water quality alert"
+            const healthRisk = (s.drivers ?? []).length ? (s.drivers ?? []).join("; ") : "Water risk signal detected"
+            const event: ContaminationEvent = {
+              id: key,
+              source: s.name,
+              region: s.region,
+              date: updatedLabel,
+              contaminant,
+              severity: toEventSeverity(s.contamination_level),
+              health_risk: healthRisk,
+            }
+            return { key, event, firstSeenAt: now, lastSeenAt: now }
+          })
+
+        if (active) {
+          setWaterSources(sources)
+
+          setQualityTrendData((prev) => {
+            if (typeof avgScore !== "number") return prev
+            const point = { date: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }), score: avgScore }
+            const next = [...prev, point]
+            return next.length > 48 ? next.slice(next.length - 48) : next
+          })
+
+          setEventHistory((prev) => {
+            const pruned = prev.filter((x) => x.lastSeenAt >= cutoff)
+            const byKey = new Map(pruned.map((x) => [x.key, x]))
+
+            for (const item of currentEvents) {
+              const existing = byKey.get(item.key)
+              if (existing) {
+                existing.lastSeenAt = now
+                existing.event.date = updatedLabel
+              } else {
+                byKey.set(item.key, item)
+              }
+            }
+
+            const next = Array.from(byKey.values()).sort((a, b) => b.lastSeenAt - a.lastSeenAt)
+            try {
+              window.localStorage.setItem(EVENT_HISTORY_KEY, JSON.stringify(next))
+            } catch {
+              // ignore storage errors
+            }
+            return next
+          })
+        }
+
+        if (active) setError(null)
+      } catch (e: any) {
+        if (!active) return
+        setError(e?.message ? String(e.message) : "Failed to load water quality data.")
+      } finally {
+        if (!active) return
+        setLoading(false)
+      }
+    }
+
+    void load()
+    timer = setInterval(load, 5 * 60 * 1000)
+
+    return () => {
+      active = false
+      if (timer) clearInterval(timer)
+    }
+  }, [])
 
   const getContaminationColor = (level: string) => {
     switch (level) {
@@ -259,8 +297,33 @@ export function WaterQualityPage() {
     }
   }
 
-  const dangerSources = waterSources.filter((s) => s.contamination_level === "danger")
-  const avgQualityScore = Math.round(waterSources.reduce((sum, s) => sum + s.quality_score, 0) / waterSources.length)
+  const dangerSources = useMemo(() => waterSources.filter((s) => s.contamination_level === "danger"), [waterSources])
+  const avgQualityScore = useMemo(() => {
+    const scores = waterSources.map((s) => s.quality_score).filter((v): v is number => typeof v === "number")
+    return scores.length ? Math.round(scores.reduce((sum, v) => sum + v, 0) / scores.length) : null
+  }, [waterSources])
+
+  const contaminationEvents = useMemo(() => {
+    const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000
+    return eventHistory
+      .filter((x) => x.lastSeenAt >= cutoff)
+      .map((x) => x.event)
+  }, [eventHistory])
+
+  const phDistributionData = useMemo(() => {
+    return waterSources
+      .map((s) => {
+        const isPH = (s.measurement ?? "").toLowerCase().includes("ph")
+        const value = isPH ? parseNumericMeasurement(s.measurement_value) : Number.NaN
+        return Number.isFinite(value)
+          ? {
+              name: s.name.split("(")[0].trim().substring(0, 15),
+              ph: value,
+            }
+          : null
+      })
+      .filter((x): x is { name: string; ph: number } => Boolean(x))
+  }, [waterSources])
 
   return (
     <div className="space-y-8">
@@ -268,18 +331,30 @@ export function WaterQualityPage() {
       <div>
         <h1 className="text-3xl font-bold text-primary flex items-center gap-2">
           <Droplet className="w-8 h-8" />
-          Water Quality Monitoring - All India
+          {t("waterQuality.title")}
         </h1>
-        <p className="text-muted-foreground mt-2">Real-time contamination tracking and quality assessment</p>
+        <p className="text-muted-foreground mt-2">{t("waterQuality.subtitle")}</p>
+        <p className="text-xs text-muted-foreground mt-2">
+          Last updated: {updatedAt || "—"}
+          {waterProvider ? ` • Source: ${waterProvider}` : ""} • Polling: 5 min
+        </p>
       </div>
+
+      {error ? (
+        <Alert className="border-red-500/50 bg-red-500/10">
+          <AlertTriangle className="h-4 w-4 text-red-400" />
+          <AlertDescription className="text-red-300">
+            <strong>{t("errors.general.somethingWentWrong")}:</strong> {error}
+          </AlertDescription>
+        </Alert>
+      ) : null}
 
       {/* Critical Alerts */}
       {dangerSources.length > 0 && (
         <Alert className="border-red-500/50 bg-red-500/10">
           <AlertTriangle className="h-4 w-4 text-red-400" />
           <AlertDescription className="text-red-300">
-            <strong>Water Safety Alert:</strong> {dangerSources.length} water source(s) showing critical contamination
-            levels across India. Immediate action required - boil water advisories recommended.
+            <strong>{t("waterQuality.waterSafetyAlert")}:</strong> {dangerSources.length} {t("waterQuality.criticalContamination")}
           </AlertDescription>
         </Alert>
       )}
@@ -288,41 +363,41 @@ export function WaterQualityPage() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <Card className="bg-card border-border">
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Total Sources Monitored</CardTitle>
+            <CardTitle className="text-sm font-medium text-muted-foreground">{t("waterQuality.totalSourcesMonitored")}</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-3xl font-bold text-primary">{waterSources.length}</p>
-            <p className="text-xs text-muted-foreground mt-1">Across all India</p>
+            <p className="text-xs text-muted-foreground mt-1">{t("waterQuality.acrossAllIndia")}</p>
           </CardContent>
         </Card>
 
         <Card className="bg-card border-border">
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Avg Quality Score</CardTitle>
+            <CardTitle className="text-sm font-medium text-muted-foreground">{t("waterQuality.avgQualityScore")}</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-3xl font-bold text-primary">{avgQualityScore}%</p>
-            <p className="text-xs text-muted-foreground mt-1">Overall water quality</p>
+            <p className="text-3xl font-bold text-primary">{typeof avgQualityScore === "number" ? `${avgQualityScore}%` : "—"}</p>
+            <p className="text-xs text-muted-foreground mt-1">{t("waterQuality.overallWaterQuality")}</p>
           </CardContent>
         </Card>
 
         <Card className="bg-card border-border">
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Critical Sources</CardTitle>
+            <CardTitle className="text-sm font-medium text-muted-foreground">{t("waterQuality.criticalSources")}</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-3xl font-bold text-red-400">{dangerSources.length}</p>
-            <p className="text-xs text-muted-foreground mt-1">Danger level contamination</p>
+            <p className="text-xs text-muted-foreground mt-1">{t("waterQuality.dangerLevelContamination")}</p>
           </CardContent>
         </Card>
 
         <Card className="bg-card border-border">
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Recent Events</CardTitle>
+            <CardTitle className="text-sm font-medium text-muted-foreground">{t("waterQuality.recentEvents")}</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-3xl font-bold text-orange-400">{contaminationEvents.length}</p>
-            <p className="text-xs text-muted-foreground mt-1">Last 7 days</p>
+            <p className="text-xs text-muted-foreground mt-1">{t("waterQuality.last7Days")}</p>
           </CardContent>
         </Card>
       </div>
@@ -330,22 +405,27 @@ export function WaterQualityPage() {
       {/* Main Content */}
       <Tabs defaultValue="sources" className="space-y-4">
         <TabsList className="bg-card border border-border">
-          <TabsTrigger value="sources">Water Sources</TabsTrigger>
-          <TabsTrigger value="contaminants">Contamination Events</TabsTrigger>
-          <TabsTrigger value="quality">Quality Trends</TabsTrigger>
-          <TabsTrigger value="analysis">Analysis</TabsTrigger>
+          <TabsTrigger value="sources">{t("waterQuality.waterSources")}</TabsTrigger>
+          <TabsTrigger value="contaminants">{t("waterQuality.contaminationEvents")}</TabsTrigger>
+          <TabsTrigger value="quality">{t("waterQuality.qualityTrends")}</TabsTrigger>
+          <TabsTrigger value="analysis">{t("waterQuality.analysis")}</TabsTrigger>
         </TabsList>
 
         {/* Water Sources Tab */}
         <TabsContent value="sources" className="space-y-4">
           <Card className="bg-card border-border">
             <CardHeader>
-              <CardTitle>All-India Water Source Status</CardTitle>
-              <CardDescription>Real-time monitoring of water quality indicators</CardDescription>
+              <CardTitle>{t("waterQuality.allIndiaWaterSourceStatus")}</CardTitle>
+              <CardDescription>{t("waterQuality.realTimeMonitoring")}</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-3 max-h-96 overflow-y-auto">
-                {waterSources.map((source) => (
+                {loading ? (
+                  <div className="text-sm text-muted-foreground">Loading…</div>
+                ) : waterSources.length === 0 ? (
+                  <div className="text-sm text-muted-foreground">No water quality records available.</div>
+                ) : (
+                  waterSources.map((source) => (
                   <div key={source.id} className="p-4 bg-background rounded-lg border border-border">
                     <div className="flex items-start justify-between mb-3">
                       <div>
@@ -358,35 +438,33 @@ export function WaterQualityPage() {
                         </p>
                       </div>
                       <Badge className={getContaminationColor(source.contamination_level)}>
-                        {source.contamination_level.toUpperCase()}
+                        {(source.quality_label ?? source.contamination_level).toUpperCase()}
                       </Badge>
                     </div>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3 text-sm">
                       <div className="bg-card p-2 rounded border border-border">
-                        <p className="text-muted-foreground text-xs">pH Level</p>
-                        <p className="font-semibold">{source.ph_level}</p>
-                        <p className="text-xs text-muted-foreground">
-                          {source.ph_level < 6.5 || source.ph_level > 8.5 ? "Abnormal" : "Normal"}
-                        </p>
+                        <p className="text-muted-foreground text-xs">Measurement</p>
+                        <p className="font-semibold">{source.measurement || "—"}</p>
+                        <p className="text-xs text-muted-foreground">Parameter</p>
                       </div>
                       <div className="bg-card p-2 rounded border border-border">
-                        <p className="text-muted-foreground text-xs">Bacterial Count</p>
-                        <p className="font-semibold">{source.bacterial_count}</p>
-                        <p className="text-xs text-muted-foreground">CFU/ml</p>
+                        <p className="text-muted-foreground text-xs">Value</p>
+                        <p className="font-semibold">{source.measurement_value || "—"}</p>
+                        <p className="text-xs text-muted-foreground">Reported</p>
                       </div>
                       <div className="bg-card p-2 rounded border border-border">
-                        <p className="text-muted-foreground text-xs">Quality Score</p>
-                        <p className="font-semibold text-primary">{source.quality_score}%</p>
+                        <p className="text-muted-foreground text-xs">{t("waterQuality.qualityScore")}</p>
+                        <p className="font-semibold text-primary">{typeof source.quality_score === "number" ? `${source.quality_score}%` : "—"}</p>
                         <div className="w-full bg-muted rounded-full h-1 mt-1">
                           <div
                             className="bg-primary h-1 rounded-full"
                             style={{
-                              width: `${source.quality_score}%`,
+                              width: `${typeof source.quality_score === "number" ? source.quality_score : 0}%`,
                               backgroundColor:
-                                source.quality_score > 75
+                                typeof source.quality_score === "number" && source.quality_score > 75
                                   ? "rgb(34, 197, 94)"
-                                  : source.quality_score > 50
+                                  : typeof source.quality_score === "number" && source.quality_score > 50
                                     ? "rgb(234, 179, 8)"
                                     : "rgb(239, 68, 68)",
                             }}
@@ -394,13 +472,13 @@ export function WaterQualityPage() {
                         </div>
                       </div>
                       <div className="bg-card p-2 rounded border border-border">
-                        <p className="text-muted-foreground text-xs">Last Tested</p>
-                        <p className="font-semibold text-xs">{source.last_tested}</p>
-                        <p className="text-xs text-muted-foreground">Recently</p>
+                        <p className="text-muted-foreground text-xs">{t("waterQuality.lastTested")}</p>
+                        <p className="font-semibold text-xs">{source.last_tested || "—"}</p>
+                        <p className="text-xs text-muted-foreground">{t("waterQuality.recently")}</p>
                       </div>
                     </div>
                   </div>
-                ))}
+                ))) }
               </div>
             </CardContent>
           </Card>
@@ -410,8 +488,8 @@ export function WaterQualityPage() {
         <TabsContent value="contaminants" className="space-y-4">
           <Card className="bg-card border-border">
             <CardHeader>
-              <CardTitle>Recent Contamination Events - All India</CardTitle>
-              <CardDescription>Detected contaminants and associated health risks</CardDescription>
+              <CardTitle>{t("waterQuality.recentContaminationEvents")}</CardTitle>
+              <CardDescription>{t("waterQuality.detectedContaminants")}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
               {contaminationEvents.map((event) => (
@@ -427,11 +505,11 @@ export function WaterQualityPage() {
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     <div>
-                      <p className="text-sm font-medium text-muted-foreground">Severity</p>
+                      <p className="text-sm font-medium text-muted-foreground">{t("waterQuality.severity")}</p>
                       <p className="font-semibold capitalize">{event.severity}</p>
                     </div>
                     <div>
-                      <p className="text-sm font-medium text-muted-foreground">Health Risk</p>
+                      <p className="text-sm font-medium text-muted-foreground">{t("waterQuality.healthRisk")}</p>
                       <p className="font-semibold">{event.health_risk}</p>
                     </div>
                   </div>
@@ -445,8 +523,8 @@ export function WaterQualityPage() {
         <TabsContent value="quality" className="space-y-4">
           <Card className="bg-card border-border">
             <CardHeader>
-              <CardTitle>National Water Quality Trend</CardTitle>
-              <CardDescription>Average quality score over past 9 days</CardDescription>
+              <CardTitle>{t("waterQuality.nationalWaterQualityTrend")}</CardTitle>
+              <CardDescription>{t("waterQuality.averageQualityScore")}</CardDescription>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
@@ -469,8 +547,8 @@ export function WaterQualityPage() {
 
           <Card className="bg-card border-border">
             <CardHeader>
-              <CardTitle>pH Level Distribution</CardTitle>
-              <CardDescription>pH levels across water sources (safe range: 6.5-8.5)</CardDescription>
+              <CardTitle>{t("waterQuality.phLevelDistribution")}</CardTitle>
+              <CardDescription>{t("waterQuality.phLevelsAcrossSources")}</CardDescription>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
@@ -491,7 +569,7 @@ export function WaterQualityPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="bg-card border-border">
               <CardHeader>
-                <CardTitle>Quality Assessment by Region</CardTitle>
+                <CardTitle>{t("waterQuality.qualityAssessmentByRegion")}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
@@ -529,24 +607,43 @@ export function WaterQualityPage() {
 
             <Card className="bg-card border-border">
               <CardHeader>
-                <CardTitle>National Recommendations</CardTitle>
+                <CardTitle>{t("waterQuality.nationalRecommendations")}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="p-3 bg-red-500/10 border border-red-500/30 rounded">
-                  <p className="font-medium text-sm text-red-300">Critical Priority</p>
+                  <p className="font-medium text-sm text-red-300">{t("waterQuality.criticalPriority")}</p>
                   <p className="text-sm mt-1">
-                    Implement boiling water protocols for major rivers (Ganges, Yamuna, Brahmaputra)
+                    {dangerSources.length
+                      ? dangerSources
+                          .slice(0, 3)
+                          .map((s) => `${s.region} (${typeof s.quality_score === "number" ? `${s.quality_score}%` : "—"})`)
+                          .join(", ")
+                      : "—"}
                   </p>
                 </div>
                 <div className="p-3 bg-orange-500/10 border border-orange-500/30 rounded">
-                  <p className="font-medium text-sm text-orange-300">High Priority</p>
+                  <p className="font-medium text-sm text-orange-300">{t("waterQuality.highPriority")}</p>
                   <p className="text-sm mt-1">
-                    Deploy water purification systems in major urban centers with high contamination
+                    {waterSources.some((s) => s.contamination_level === "warning")
+                      ? waterSources
+                          .filter((s) => s.contamination_level === "warning")
+                          .slice(0, 3)
+                          .map((s) => `${s.region} (${typeof s.quality_score === "number" ? `${s.quality_score}%` : "—"})`)
+                          .join(", ")
+                      : "—"}
                   </p>
                 </div>
                 <div className="p-3 bg-green-500/10 border border-green-500/30 rounded">
-                  <p className="font-medium text-sm text-green-300">Positive</p>
-                  <p className="text-sm mt-1">Southern and coastal states maintain better water quality standards</p>
+                  <p className="font-medium text-sm text-green-300">{t("waterQuality.positive")}</p>
+                  <p className="text-sm mt-1">
+                    {waterSources.some((s) => s.contamination_level === "safe")
+                      ? waterSources
+                          .filter((s) => s.contamination_level === "safe")
+                          .slice(0, 3)
+                          .map((s) => `${s.region} (${typeof s.quality_score === "number" ? `${s.quality_score}%` : "—"})`)
+                          .join(", ")
+                      : "—"}
+                  </p>
                 </div>
               </CardContent>
             </Card>

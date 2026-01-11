@@ -1,15 +1,19 @@
 "use client";
 
+import { useTranslation } from "react-i18next"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { BarChart, Bar, LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
-import { BarChart3, Target, TrendingUp, Users } from "lucide-react";
+import { BarChart3, Target, TrendingUp, Users, Download } from "lucide-react";
 import {
   MOCK_DEMOGRAPHIC_DATA as demographicData,
   MOCK_SEASONAL_INSIGHTS as seasonalInsights,
   MOCK_VULNERABLE_DEMOGRAPHICS as vulnerableDemographics
 } from "../lib/mock-disease-data";
+import { HistoricalTrends } from "./historical-trends";
+import { exportToCSV, exportToJSON } from "@/lib/export";
 
 const yearComparisonData = [
   { month: "Jan", cases_2024: 120, cases_2023: 145, cases_2022: 156 },
@@ -27,24 +31,37 @@ const yearComparisonData = [
 ];
 
 export default function AnalyticsInsightsPage() {
+  const { t } = useTranslation()
   return (
     <div className="space-y-8">
       {/* Header */}
       <div>
         <h1 className="text-3xl font-bold text-primary flex items-center gap-2">
           <BarChart3 className="w-8 h-8" />
-          Analytics & Insights Dashboard
+          {t("analytics.title")}
         </h1>
         <p className="text-muted-foreground mt-2">
-          Year-over-year analysis, demographic insights, and strategic recommendations
+          {t("analytics.subtitle")}
         </p>
       </div>
+      <div className="flex items-center justify-end mb-4">
+        <Button
+          variant="outline"
+          onClick={() => exportToJSON({ yearly: yearComparisonData, demographics: demographicData, seasonal: seasonalInsights }, "analytics")}
+          className="flex items-center gap-2"
+        >
+          <Download className="w-4 h-4" />
+          {t("common.export")} {t("common.download")}
+        </Button>
+      </div>
+
       <Tabs defaultValue="yearly" className="space-y-6 mt-8">
         <TabsList>
-          <TabsTrigger value="yearly">Yearly Comparison</TabsTrigger>
-          <TabsTrigger value="demographics">Demographics</TabsTrigger>
-          <TabsTrigger value="seasonal">Seasonal Patterns</TabsTrigger>
-          <TabsTrigger value="success">Success Metrics</TabsTrigger>
+          <TabsTrigger value="yearly">{t("analytics.yearlyComparison")}</TabsTrigger>
+          <TabsTrigger value="demographics">{t("analytics.demographics")}</TabsTrigger>
+          <TabsTrigger value="seasonal">{t("analytics.seasonalPatterns")}</TabsTrigger>
+          <TabsTrigger value="historical">{t("analytics.historicalTrends")}</TabsTrigger>
+          <TabsTrigger value="success">{t("analytics.successMetrics")}</TabsTrigger>
         </TabsList>
         {/* Yearly Comparison Tab */}
         <TabsContent value="yearly" className="space-y-4">
@@ -270,6 +287,14 @@ export default function AnalyticsInsightsPage() {
               </div>
             </CardContent>
           </Card>
+        </TabsContent>
+        {/* Historical Trends Tab */}
+        <TabsContent value="historical" className="space-y-4">
+          <HistoricalTrends days={30} />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <HistoricalTrends state="Uttar Pradesh" days={30} />
+            <HistoricalTrends state="Maharashtra" days={30} />
+          </div>
         </TabsContent>
         {/* Success Metrics Tab */}
         <TabsContent value="success" className="space-y-4">

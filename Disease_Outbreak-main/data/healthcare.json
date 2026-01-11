@@ -1,0 +1,2465 @@
+{
+  "updatedAt": "2026-01-06T18:52:28.054Z",
+  "states": [
+    {
+      "state": "Andaman & Nicobar Islands",
+      "bedsAvailable": 62,
+      "totalBeds": 550,
+      "ventilatorsAvailable": 10,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://andamanhealth.gov.in/",
+      "hospitals": [
+        {
+          "name": "Govt. Hospital Port Blair",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://andamanhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "GB Pant Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://andamanhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Chatham Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://andamanhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Rangat District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://andamanhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Hut Bay Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://andamanhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Mayabunder Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://andamanhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Diglipur Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://andamanhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Havelock Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://andamanhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Andhra Pradesh",
+      "bedsAvailable": 101,
+      "totalBeds": 730,
+      "ventilatorsAvailable": 15,
+      "resourcesDispatched": 5,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://hmfw.ap.gov.in/",
+      "hospitals": [
+        {
+          "name": "Andhra Medical College Visakhapatnam",
+          "bedsAvailable": 18,
+          "totalBeds": 120,
+          "sourceUrl": "https://hmfw.ap.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Guntur Medical College",
+          "bedsAvailable": 16,
+          "totalBeds": 110,
+          "sourceUrl": "https://hmfw.ap.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Kurnool Medical College",
+          "bedsAvailable": 14,
+          "totalBeds": 100,
+          "sourceUrl": "https://hmfw.ap.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Rangaraya Medical College Kakinada",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://hmfw.ap.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Sri Venkateswara Medical College Tirupati",
+          "bedsAvailable": 14,
+          "totalBeds": 95,
+          "sourceUrl": "https://hmfw.ap.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Anantapur",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://hmfw.ap.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Ongole",
+          "bedsAvailable": 9,
+          "totalBeds": 70,
+          "sourceUrl": "https://hmfw.ap.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Eluru",
+          "bedsAvailable": 8,
+          "totalBeds": 65,
+          "sourceUrl": "https://hmfw.ap.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "bedsAvailable": 36,
+      "totalBeds": 285,
+      "ventilatorsAvailable": 6,
+      "resourcesDispatched": 2,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.arunachal.gov.in/",
+      "hospitals": [
+        {
+          "name": "Tomo Riba Institute Naharlagun",
+          "bedsAvailable": 8,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.arunachal.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Ramakrishna Mission Hospital Itanagar",
+          "bedsAvailable": 6,
+          "totalBeds": 50,
+          "sourceUrl": "https://health.arunachal.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "General Hospital Pasighat",
+          "bedsAvailable": 5,
+          "totalBeds": 40,
+          "sourceUrl": "https://health.arunachal.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "General Hospital Tawang",
+          "bedsAvailable": 4,
+          "totalBeds": 30,
+          "sourceUrl": "https://health.arunachal.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "General Hospital Ziro",
+          "bedsAvailable": 4,
+          "totalBeds": 30,
+          "sourceUrl": "https://health.arunachal.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "General Hospital Bomdila",
+          "bedsAvailable": 3,
+          "totalBeds": 25,
+          "sourceUrl": "https://health.arunachal.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "General Hospital Aalo",
+          "bedsAvailable": 3,
+          "totalBeds": 25,
+          "sourceUrl": "https://health.arunachal.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "General Hospital Roing",
+          "bedsAvailable": 3,
+          "totalBeds": 25,
+          "sourceUrl": "https://health.arunachal.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Assam",
+      "bedsAvailable": 85,
+      "totalBeds": 310,
+      "ventilatorsAvailable": 10,
+      "resourcesDispatched": 4,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://hfw.assam.gov.in/",
+      "hospitals": [
+        {
+          "name": "Assam Medical College Dibrugarh",
+          "bedsAvailable": 12,
+          "totalBeds": 40,
+          "sourceUrl": "https://hfw.assam.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Guwahati Medical College Hospital",
+          "bedsAvailable": 18,
+          "totalBeds": 60,
+          "sourceUrl": "https://hfw.assam.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Silchar Medical College",
+          "bedsAvailable": 15,
+          "totalBeds": 50,
+          "sourceUrl": "https://hfw.assam.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "FAAMCH Barpeta",
+          "bedsAvailable": 10,
+          "totalBeds": 40,
+          "sourceUrl": "https://hfw.assam.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Tezpur Medical College",
+          "bedsAvailable": 9,
+          "totalBeds": 35,
+          "sourceUrl": "https://hfw.assam.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Lakhimpur Medical College",
+          "bedsAvailable": 8,
+          "totalBeds": 30,
+          "sourceUrl": "https://hfw.assam.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Nalbari Medical College",
+          "bedsAvailable": 7,
+          "totalBeds": 30,
+          "sourceUrl": "https://hfw.assam.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Kokrajhar Medical College",
+          "bedsAvailable": 6,
+          "totalBeds": 25,
+          "sourceUrl": "https://hfw.assam.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        }
+      ]
+    },
+    {
+      "state": "Bihar",
+      "bedsAvailable": 113,
+      "totalBeds": 875,
+      "ventilatorsAvailable": 20,
+      "resourcesDispatched": 7,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://state.bihar.gov.in/health/",
+      "hospitals": [
+        {
+          "name": "PMCH Patna",
+          "bedsAvailable": 22,
+          "totalBeds": 160,
+          "sourceUrl": "https://state.bihar.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "NMCH Patna",
+          "bedsAvailable": 18,
+          "totalBeds": 140,
+          "sourceUrl": "https://state.bihar.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "DMCH Darbhanga",
+          "bedsAvailable": 16,
+          "totalBeds": 120,
+          "sourceUrl": "https://state.bihar.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "IGIMS Patna",
+          "bedsAvailable": 14,
+          "totalBeds": 110,
+          "sourceUrl": "https://state.bihar.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "JLNMCH Bhagalpur",
+          "bedsAvailable": 12,
+          "totalBeds": 100,
+          "sourceUrl": "https://state.bihar.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "SKMCH Muzaffarpur",
+          "bedsAvailable": 12,
+          "totalBeds": 95,
+          "sourceUrl": "https://state.bihar.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "GMCH Bettiah",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://state.bihar.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "VIMS Pawapuri",
+          "bedsAvailable": 9,
+          "totalBeds": 70,
+          "sourceUrl": "https://state.bihar.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Chandigarh",
+      "bedsAvailable": 62,
+      "totalBeds": 550,
+      "ventilatorsAvailable": 10,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://chdhealth.gov.in/",
+      "hospitals": [
+        {
+          "name": "PGIMER Chandigarh",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://chdhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Multi Speciality Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://chdhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "City Hospital Chandigarh",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://chdhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "PGI Satellite Centre",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://chdhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Hospital Sector 16",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://chdhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Hospital Sector 22",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://chdhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Hospital Sector 32",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://chdhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Hospital Sector 44",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://chdhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Chhattisgarh",
+      "bedsAvailable": 101,
+      "totalBeds": 750,
+      "ventilatorsAvailable": 22,
+      "resourcesDispatched": 8,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.cg.gov.in/",
+      "hospitals": [
+        {
+          "name": "AIIMS Raipur",
+          "bedsAvailable": 24,
+          "totalBeds": 170,
+          "sourceUrl": "https://health.cg.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Mekahara Hospital Raipur",
+          "bedsAvailable": 16,
+          "totalBeds": 120,
+          "sourceUrl": "https://health.cg.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Bilaspur Medical College",
+          "bedsAvailable": 14,
+          "totalBeds": 100,
+          "sourceUrl": "https://health.cg.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Rajnandgaon Medical College",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://health.cg.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Jagdalpur Medical College",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://health.cg.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Ambikapur Medical College",
+          "bedsAvailable": 9,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.cg.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Kanker District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.cg.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Durg District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.cg.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Dadra & Nagar Haveli and Daman & Diu",
+      "bedsAvailable": 60,
+      "totalBeds": 540,
+      "ventilatorsAvailable": 8,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://dnh.gov.in/health",
+      "hospitals": [
+        {
+          "name": "Dadra Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://dnh.gov.in/health",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Daman Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://dnh.gov.in/health",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Silvassa Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://dnh.gov.in/health",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Diu Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://dnh.gov.in/health",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Ambli Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://dnh.gov.in/health",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Khanvel CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://dnh.gov.in/health",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Udvada Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://dnh.gov.in/health",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Nani Daman Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://dnh.gov.in/health",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Goa",
+      "bedsAvailable": 51,
+      "totalBeds": 405,
+      "ventilatorsAvailable": 10,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://www.goa.gov.in/health/",
+      "hospitals": [
+        {
+          "name": "Goa Medical College Bambolim",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://www.goa.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "North Goa District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 60,
+          "sourceUrl": "https://www.goa.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "South Goa District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 60,
+          "sourceUrl": "https://www.goa.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Asilo Hospital Mapusa",
+          "bedsAvailable": 6,
+          "totalBeds": 50,
+          "sourceUrl": "https://www.goa.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Cottage Hospital Bicholim",
+          "bedsAvailable": 5,
+          "totalBeds": 40,
+          "sourceUrl": "https://www.goa.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "CHC Canacona",
+          "bedsAvailable": 4,
+          "totalBeds": 35,
+          "sourceUrl": "https://www.goa.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "CHC Pernem",
+          "bedsAvailable": 4,
+          "totalBeds": 35,
+          "sourceUrl": "https://www.goa.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "CHC Quepem",
+          "bedsAvailable": 4,
+          "totalBeds": 35,
+          "sourceUrl": "https://www.goa.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Gujarat",
+      "bedsAvailable": 130,
+      "totalBeds": 1020,
+      "ventilatorsAvailable": 28,
+      "resourcesDispatched": 10,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://gujhealth.gujarat.gov.in/",
+      "hospitals": [
+        {
+          "name": "Civil Hospital Ahmedabad",
+          "bedsAvailable": 30,
+          "totalBeds": 220,
+          "sourceUrl": "https://gujhealth.gujarat.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "SSG Hospital Vadodara",
+          "bedsAvailable": 20,
+          "totalBeds": 150,
+          "sourceUrl": "https://gujhealth.gujarat.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "New Civil Hospital Surat",
+          "bedsAvailable": 18,
+          "totalBeds": 140,
+          "sourceUrl": "https://gujhealth.gujarat.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Rajkot",
+          "bedsAvailable": 16,
+          "totalBeds": 120,
+          "sourceUrl": "https://gujhealth.gujarat.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Bhavnagar",
+          "bedsAvailable": 14,
+          "totalBeds": 110,
+          "sourceUrl": "https://gujhealth.gujarat.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Jamnagar",
+          "bedsAvailable": 12,
+          "totalBeds": 100,
+          "sourceUrl": "https://gujhealth.gujarat.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Junagadh",
+          "bedsAvailable": 10,
+          "totalBeds": 90,
+          "sourceUrl": "https://gujhealth.gujarat.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Gandhinagar",
+          "bedsAvailable": 10,
+          "totalBeds": 90,
+          "sourceUrl": "https://gujhealth.gujarat.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Haryana",
+      "bedsAvailable": 102,
+      "totalBeds": 770,
+      "ventilatorsAvailable": 16,
+      "resourcesDispatched": 6,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://haryanahealth.nic.in/",
+      "hospitals": [
+        {
+          "name": "PGIMS Rohtak",
+          "bedsAvailable": 20,
+          "totalBeds": 140,
+          "sourceUrl": "https://haryanahealth.nic.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "ESIC Medical College Faridabad",
+          "bedsAvailable": 16,
+          "totalBeds": 120,
+          "sourceUrl": "https://haryanahealth.nic.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Gurugram",
+          "bedsAvailable": 14,
+          "totalBeds": 100,
+          "sourceUrl": "https://haryanahealth.nic.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Panipat",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://haryanahealth.nic.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Hisar",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://haryanahealth.nic.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Karnal",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://haryanahealth.nic.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Sonipat",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://haryanahealth.nic.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Yamunanagar",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://haryanahealth.nic.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Himachal Pradesh",
+      "bedsAvailable": 62,
+      "totalBeds": 550,
+      "ventilatorsAvailable": 10,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://himachal.nic.in/health/",
+      "hospitals": [
+        {
+          "name": "IGMC Shimla",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://himachal.nic.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Dr RPGMC Tanda",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://himachal.nic.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Zonal Hospital Dharamshala",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://himachal.nic.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Zonal Hospital Hamirpur",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://himachal.nic.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Solan",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://himachal.nic.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Una",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://himachal.nic.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Mandi",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://himachal.nic.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Nahan",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://himachal.nic.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Jammu & Kashmir",
+      "bedsAvailable": 138,
+      "totalBeds": 950,
+      "ventilatorsAvailable": 20,
+      "resourcesDispatched": 7,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://jkhealth.gov.in/",
+      "hospitals": [
+        {
+          "name": "SMHS Srinagar",
+          "bedsAvailable": 24,
+          "totalBeds": 180,
+          "sourceUrl": "https://jkhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "GMC Jammu",
+          "bedsAvailable": 22,
+          "totalBeds": 160,
+          "sourceUrl": "https://jkhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "District Hospital Anantnag",
+          "bedsAvailable": 20,
+          "totalBeds": 140,
+          "sourceUrl": "https://jkhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "District Hospital Baramulla",
+          "bedsAvailable": 18,
+          "totalBeds": 120,
+          "sourceUrl": "https://jkhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "District Hospital Udhampur",
+          "bedsAvailable": 16,
+          "totalBeds": 100,
+          "sourceUrl": "https://jkhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "District Hospital Kulgam",
+          "bedsAvailable": 14,
+          "totalBeds": 90,
+          "sourceUrl": "https://jkhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "District Hospital Pulwama",
+          "bedsAvailable": 12,
+          "totalBeds": 80,
+          "sourceUrl": "https://jkhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "District Hospital Kathua",
+          "bedsAvailable": 12,
+          "totalBeds": 80,
+          "sourceUrl": "https://jkhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Jharkhand",
+      "bedsAvailable": 86,
+      "totalBeds": 680,
+      "ventilatorsAvailable": 14,
+      "resourcesDispatched": 5,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.jharkhand.gov.in/",
+      "hospitals": [
+        {
+          "name": "RIMS Ranchi",
+          "bedsAvailable": 16,
+          "totalBeds": 120,
+          "sourceUrl": "https://health.jharkhand.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "CMCH Ranchi",
+          "bedsAvailable": 14,
+          "totalBeds": 100,
+          "sourceUrl": "https://health.jharkhand.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Sadar Hospital Bokaro",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://health.jharkhand.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Patliputra Medical College Hazaribagh",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://health.jharkhand.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Giridih District Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://health.jharkhand.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Dumka District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.jharkhand.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Jamtara District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.jharkhand.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Deoghar District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.jharkhand.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Karnataka",
+      "bedsAvailable": 116,
+      "totalBeds": 810,
+      "ventilatorsAvailable": 22,
+      "resourcesDispatched": 8,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://karunadu.karnataka.gov.in/health/",
+      "hospitals": [
+        {
+          "name": "Bangalore Medical College",
+          "bedsAvailable": 28,
+          "totalBeds": 160,
+          "sourceUrl": "https://karunadu.karnataka.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Mysore Medical College",
+          "bedsAvailable": 20,
+          "totalBeds": 130,
+          "sourceUrl": "https://karunadu.karnataka.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Hubli KIMS",
+          "bedsAvailable": 16,
+          "totalBeds": 110,
+          "sourceUrl": "https://karunadu.karnataka.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Shimoga Medical College",
+          "bedsAvailable": 14,
+          "totalBeds": 100,
+          "sourceUrl": "https://karunadu.karnataka.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Hassan Medical College",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://karunadu.karnataka.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Raichur Medical College",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://karunadu.karnataka.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Chamarajanagar Medical College",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://karunadu.karnataka.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Gulbarga Institute of Medical Sciences",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://karunadu.karnataka.gov.in/health/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Kerala",
+      "bedsAvailable": 126,
+      "totalBeds": 990,
+      "ventilatorsAvailable": 22,
+      "resourcesDispatched": 8,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.kerala.gov.in/",
+      "hospitals": [
+        {
+          "name": "Government Medical College Thiruvananthapuram",
+          "bedsAvailable": 26,
+          "totalBeds": 180,
+          "sourceUrl": "https://health.kerala.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Kozhikode",
+          "bedsAvailable": 22,
+          "totalBeds": 160,
+          "sourceUrl": "https://health.kerala.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Kottayam",
+          "bedsAvailable": 18,
+          "totalBeds": 140,
+          "sourceUrl": "https://health.kerala.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Thrissur",
+          "bedsAvailable": 16,
+          "totalBeds": 130,
+          "sourceUrl": "https://health.kerala.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Alappuzha",
+          "bedsAvailable": 14,
+          "totalBeds": 120,
+          "sourceUrl": "https://health.kerala.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Manjeri",
+          "bedsAvailable": 12,
+          "totalBeds": 100,
+          "sourceUrl": "https://health.kerala.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Kannur",
+          "bedsAvailable": 10,
+          "totalBeds": 90,
+          "sourceUrl": "https://health.kerala.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Idukki",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.kerala.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "1056"
+        }
+      ]
+    },
+    {
+      "state": "Ladakh",
+      "bedsAvailable": 62,
+      "totalBeds": 550,
+      "ventilatorsAvailable": 10,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://ladakhhealth.gov.in/",
+      "hospitals": [
+        {
+          "name": "Dr. Ram Manohar Lohia Hospital Leh",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://ladakhhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Leh District Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://ladakhhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Kargil District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://ladakhhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Sub District Hospital Nubra",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://ladakhhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Sub District Hospital Zanskar",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://ladakhhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Sub District Hospital Khaltsi",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://ladakhhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Sub District Hospital Nyoma",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://ladakhhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Sub District Hospital Diskit",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://ladakhhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Lakshadweep",
+      "bedsAvailable": 56,
+      "totalBeds": 520,
+      "ventilatorsAvailable": 8,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.lakshadweep.gov.in/",
+      "hospitals": [
+        {
+          "name": "Lakshadweep Hospital Kavaratti",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://health.lakshadweep.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Minicoy Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.lakshadweep.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Amini Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.lakshadweep.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Kavaratti CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.lakshadweep.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Kiltan CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.lakshadweep.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Chetlat CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.lakshadweep.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Bangaram CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.lakshadweep.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Kadmat CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.lakshadweep.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Madhya Pradesh",
+      "bedsAvailable": 136,
+      "totalBeds": 1080,
+      "ventilatorsAvailable": 22,
+      "resourcesDispatched": 8,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.mp.gov.in/",
+      "hospitals": [
+        {
+          "name": "Hamidia Hospital Bhopal",
+          "bedsAvailable": 24,
+          "totalBeds": 170,
+          "sourceUrl": "https://health.mp.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "MGM Medical College Indore",
+          "bedsAvailable": 22,
+          "totalBeds": 160,
+          "sourceUrl": "https://health.mp.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Gandhi Medical College Bhopal",
+          "bedsAvailable": 20,
+          "totalBeds": 150,
+          "sourceUrl": "https://health.mp.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "NSCB Medical College Jabalpur",
+          "bedsAvailable": 18,
+          "totalBeds": 140,
+          "sourceUrl": "https://health.mp.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Gajra Raja Medical College Gwalior",
+          "bedsAvailable": 16,
+          "totalBeds": 130,
+          "sourceUrl": "https://health.mp.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Bundelkhand Medical College Sagar",
+          "bedsAvailable": 14,
+          "totalBeds": 120,
+          "sourceUrl": "https://health.mp.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Shyam Shah Medical College Rewa",
+          "bedsAvailable": 12,
+          "totalBeds": 110,
+          "sourceUrl": "https://health.mp.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Ratlam",
+          "bedsAvailable": 10,
+          "totalBeds": 100,
+          "sourceUrl": "https://health.mp.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Maharashtra",
+      "bedsAvailable": 186,
+      "totalBeds": 1430,
+      "ventilatorsAvailable": 28,
+      "resourcesDispatched": 10,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://www.maharashtra.gov.in/",
+      "hospitals": [
+        {
+          "name": "KEM Hospital Mumbai",
+          "bedsAvailable": 32,
+          "totalBeds": 240,
+          "sourceUrl": "https://www.maharashtra.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Nair Hospital Mumbai",
+          "bedsAvailable": 28,
+          "totalBeds": 200,
+          "sourceUrl": "https://www.maharashtra.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "JJ Hospital Mumbai",
+          "bedsAvailable": 26,
+          "totalBeds": 190,
+          "sourceUrl": "https://www.maharashtra.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Sassoon Hospital Pune",
+          "bedsAvailable": 24,
+          "totalBeds": 180,
+          "sourceUrl": "https://www.maharashtra.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Nagpur",
+          "bedsAvailable": 22,
+          "totalBeds": 170,
+          "sourceUrl": "https://www.maharashtra.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Aurangabad",
+          "bedsAvailable": 20,
+          "totalBeds": 160,
+          "sourceUrl": "https://www.maharashtra.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Kolhapur",
+          "bedsAvailable": 18,
+          "totalBeds": 150,
+          "sourceUrl": "https://www.maharashtra.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Medical College Solapur",
+          "bedsAvailable": 16,
+          "totalBeds": 140,
+          "sourceUrl": "https://www.maharashtra.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Manipur",
+      "bedsAvailable": 66,
+      "totalBeds": 540,
+      "ventilatorsAvailable": 12,
+      "resourcesDispatched": 4,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://healthmanipur.gov.in/",
+      "hospitals": [
+        {
+          "name": "RIMS Imphal",
+          "bedsAvailable": 14,
+          "totalBeds": 120,
+          "sourceUrl": "https://healthmanipur.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "JNIMS Imphal",
+          "bedsAvailable": 12,
+          "totalBeds": 100,
+          "sourceUrl": "https://healthmanipur.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Churachandpur District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 60,
+          "sourceUrl": "https://healthmanipur.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Thoubal District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 60,
+          "sourceUrl": "https://healthmanipur.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Bishnupur District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 50,
+          "sourceUrl": "https://healthmanipur.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Ukhrul District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 50,
+          "sourceUrl": "https://healthmanipur.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Senapati District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 50,
+          "sourceUrl": "https://healthmanipur.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Imphal East District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 50,
+          "sourceUrl": "https://healthmanipur.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Meghalaya",
+      "bedsAvailable": 68,
+      "totalBeds": 610,
+      "ventilatorsAvailable": 14,
+      "resourcesDispatched": 5,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://meghealth.gov.in/",
+      "hospitals": [
+        {
+          "name": "NEIGRIHMS Shillong",
+          "bedsAvailable": 16,
+          "totalBeds": 130,
+          "sourceUrl": "https://meghealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Shillong Civil Hospital",
+          "bedsAvailable": 12,
+          "totalBeds": 100,
+          "sourceUrl": "https://meghealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Tura District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://meghealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Jowai Civil Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://meghealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Nongpoh Civil Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://meghealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Williamnagar Civil Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://meghealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Khliehriat Civil Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://meghealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Mawkyrwat Civil Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://meghealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Mizoram",
+      "bedsAvailable": 62,
+      "totalBeds": 570,
+      "ventilatorsAvailable": 12,
+      "resourcesDispatched": 4,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.mizoram.gov.in/",
+      "hospitals": [
+        {
+          "name": "Zoram Medical College Falkawn",
+          "bedsAvailable": 14,
+          "totalBeds": 110,
+          "sourceUrl": "https://health.mizoram.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Aizawl Civil Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 90,
+          "sourceUrl": "https://health.mizoram.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Lunglei Civil Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.mizoram.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Champhai Civil Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.mizoram.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Kolasib Civil Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.mizoram.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Serchhip Civil Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.mizoram.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Lawngtlai Civil Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.mizoram.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Saitual Civil Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.mizoram.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Nagaland",
+      "bedsAvailable": 60,
+      "totalBeds": 560,
+      "ventilatorsAvailable": 10,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.nagaland.gov.in/",
+      "hospitals": [
+        {
+          "name": "Naga Hospital Kohima",
+          "bedsAvailable": 12,
+          "totalBeds": 100,
+          "sourceUrl": "https://health.nagaland.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Dimapur District Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 90,
+          "sourceUrl": "https://health.nagaland.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Mokokchung District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.nagaland.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Wokha District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.nagaland.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Tuensang District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.nagaland.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Zunheboto District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.nagaland.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Phek District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.nagaland.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Mon District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.nagaland.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Odisha",
+      "bedsAvailable": 140,
+      "totalBeds": 1150,
+      "ventilatorsAvailable": 22,
+      "resourcesDispatched": 8,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.odisha.gov.in/",
+      "hospitals": [
+        {
+          "name": "SCB Medical College Cuttack",
+          "bedsAvailable": 26,
+          "totalBeds": 190,
+          "sourceUrl": "https://health.odisha.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "AIIMS Bhubaneswar",
+          "bedsAvailable": 24,
+          "totalBeds": 180,
+          "sourceUrl": "https://health.odisha.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "VIMSAR Burla",
+          "bedsAvailable": 20,
+          "totalBeds": 160,
+          "sourceUrl": "https://health.odisha.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "MKCG Medical College Berhampur",
+          "bedsAvailable": 18,
+          "totalBeds": 150,
+          "sourceUrl": "https://health.odisha.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "FM Medical College Balasore",
+          "bedsAvailable": 16,
+          "totalBeds": 140,
+          "sourceUrl": "https://health.odisha.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "SLN Medical College Koraput",
+          "bedsAvailable": 14,
+          "totalBeds": 120,
+          "sourceUrl": "https://health.odisha.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Pandit Raghunath Murmu Medical College Baripada",
+          "bedsAvailable": 12,
+          "totalBeds": 110,
+          "sourceUrl": "https://health.odisha.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "GMC Sundargarh",
+          "bedsAvailable": 10,
+          "totalBeds": 100,
+          "sourceUrl": "https://health.odisha.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Puducherry",
+      "bedsAvailable": 62,
+      "totalBeds": 550,
+      "ventilatorsAvailable": 10,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.py.gov.in/",
+      "hospitals": [
+        {
+          "name": "Jawaharlal Institute of Postgraduate Medical Education & Research",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://health.py.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Indira Gandhi Government General Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://health.py.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Goubert Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.py.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Ariyankuppam CHC",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.py.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Karaikal Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.py.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Mahe Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.py.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Yanam Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.py.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Thirubuvanai CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.py.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Sikkim",
+      "bedsAvailable": 62,
+      "totalBeds": 550,
+      "ventilatorsAvailable": 10,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.sikkim.gov.in/",
+      "hospitals": [
+        {
+          "name": "STNM Gangtok",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://health.sikkim.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Sikkim Manipal Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://health.sikkim.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Central Referral Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.sikkim.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Ravangla District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.sikkim.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Gangtok District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.sikkim.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Namchi Civil Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.sikkim.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Gyalshing CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.sikkim.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Pelling CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://health.sikkim.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Tamil Nadu",
+      "bedsAvailable": 160,
+      "totalBeds": 1210,
+      "ventilatorsAvailable": 28,
+      "resourcesDispatched": 10,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "http://www.tnhealth.tn.gov.in/",
+      "hospitals": [
+        {
+          "name": "Rajiv Gandhi Government General Hospital Chennai",
+          "bedsAvailable": 32,
+          "totalBeds": 220,
+          "sourceUrl": "http://www.tnhealth.tn.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Stanley Medical College Chennai",
+          "bedsAvailable": 26,
+          "totalBeds": 180,
+          "sourceUrl": "http://www.tnhealth.tn.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Madurai Medical College",
+          "bedsAvailable": 22,
+          "totalBeds": 160,
+          "sourceUrl": "http://www.tnhealth.tn.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Coimbatore Medical College",
+          "bedsAvailable": 20,
+          "totalBeds": 150,
+          "sourceUrl": "http://www.tnhealth.tn.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Thanjavur Medical College",
+          "bedsAvailable": 18,
+          "totalBeds": 140,
+          "sourceUrl": "http://www.tnhealth.tn.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Tirunelveli Medical College",
+          "bedsAvailable": 16,
+          "totalBeds": 130,
+          "sourceUrl": "http://www.tnhealth.tn.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Salem Medical College",
+          "bedsAvailable": 14,
+          "totalBeds": 120,
+          "sourceUrl": "http://www.tnhealth.tn.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Vellore Medical College",
+          "bedsAvailable": 12,
+          "totalBeds": 110,
+          "sourceUrl": "http://www.tnhealth.tn.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Telangana",
+      "bedsAvailable": 138,
+      "totalBeds": 950,
+      "ventilatorsAvailable": 20,
+      "resourcesDispatched": 7,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://telanganahealth.gov.in/",
+      "hospitals": [
+        {
+          "name": "Osmania General Hospital Hyderabad",
+          "bedsAvailable": 24,
+          "totalBeds": 180,
+          "sourceUrl": "https://telanganahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Nizam's Institute of Medical Sciences Hyderabad",
+          "bedsAvailable": 22,
+          "totalBeds": 160,
+          "sourceUrl": "https://telanganahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government General Hospital Koti",
+          "bedsAvailable": 20,
+          "totalBeds": 140,
+          "sourceUrl": "https://telanganahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Kakatiya Medical College Warangal",
+          "bedsAvailable": 18,
+          "totalBeds": 120,
+          "sourceUrl": "https://telanganahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Medical College Mahbubnagar",
+          "bedsAvailable": 16,
+          "totalBeds": 100,
+          "sourceUrl": "https://telanganahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Government Hospital Karimnagar",
+          "bedsAvailable": 14,
+          "totalBeds": 90,
+          "sourceUrl": "https://telanganahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Govt. Hospital Nizamabad",
+          "bedsAvailable": 12,
+          "totalBeds": 80,
+          "sourceUrl": "https://telanganahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "General Hospital Ramagundam",
+          "bedsAvailable": 12,
+          "totalBeds": 80,
+          "sourceUrl": "https://telanganahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Tripura",
+      "bedsAvailable": 62,
+      "totalBeds": 550,
+      "ventilatorsAvailable": 10,
+      "resourcesDispatched": 3,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://tripurahealth.gov.in/",
+      "hospitals": [
+        {
+          "name": "Agartala Government Medical College",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://tripurahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Gobind Ballabh Pant Hospital",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://tripurahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Agartala Civil Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://tripurahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Udaipur District Hospital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://tripurahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Kailasahar District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://tripurahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Bishalgarh District Hospital",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://tripurahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Teliamura CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://tripurahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Ambassa CHC",
+          "bedsAvailable": 6,
+          "totalBeds": 60,
+          "sourceUrl": "https://tripurahealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "Uttarakhand",
+      "bedsAvailable": 100,
+      "totalBeds": 760,
+      "ventilatorsAvailable": 16,
+      "resourcesDispatched": 6,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://health.uk.gov.in/",
+      "hospitals": [
+        {
+          "name": "AIIMS Rishikesh",
+          "bedsAvailable": 20,
+          "totalBeds": 140,
+          "sourceUrl": "https://health.uk.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "GMC Haldwani",
+          "bedsAvailable": 16,
+          "totalBeds": 120,
+          "sourceUrl": "https://health.uk.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Doon Medical College Dehradun",
+          "bedsAvailable": 14,
+          "totalBeds": 100,
+          "sourceUrl": "https://health.uk.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "GMCH Rishikesh",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://health.uk.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Civil Hospital Haridwar",
+          "bedsAvailable": 12,
+          "totalBeds": 90,
+          "sourceUrl": "https://health.uk.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "CHC Dehradun",
+          "bedsAvailable": 10,
+          "totalBeds": 80,
+          "sourceUrl": "https://health.uk.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "CHC Almora",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.uk.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "CHC Nainital",
+          "bedsAvailable": 8,
+          "totalBeds": 70,
+          "sourceUrl": "https://health.uk.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    },
+    {
+      "state": "West Bengal",
+      "bedsAvailable": 162,
+      "totalBeds": 1270,
+      "ventilatorsAvailable": 26,
+      "resourcesDispatched": 9,
+      "lastUpdated": "2026-01-05T18:00:00.000Z",
+      "sourceUrl": "https://www.wbhealth.gov.in/",
+      "hospitals": [
+        {
+          "name": "SSKM Hospital Kolkata",
+          "bedsAvailable": 30,
+          "totalBeds": 210,
+          "sourceUrl": "https://www.wbhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "NRS Medical College Kolkata",
+          "bedsAvailable": 26,
+          "totalBeds": 190,
+          "sourceUrl": "https://www.wbhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Medical College Kolkata",
+          "bedsAvailable": 24,
+          "totalBeds": 180,
+          "sourceUrl": "https://www.wbhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "RG Kar Medical College",
+          "bedsAvailable": 22,
+          "totalBeds": 170,
+          "sourceUrl": "https://www.wbhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "North Bengal Medical College",
+          "bedsAvailable": 18,
+          "totalBeds": 150,
+          "sourceUrl": "https://www.wbhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Burdwan Medical College",
+          "bedsAvailable": 16,
+          "totalBeds": 140,
+          "sourceUrl": "https://www.wbhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Bankura Sammilani Medical College",
+          "bedsAvailable": 14,
+          "totalBeds": 120,
+          "sourceUrl": "https://www.wbhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        },
+        {
+          "name": "Malda Medical College",
+          "bedsAvailable": 12,
+          "totalBeds": 110,
+          "sourceUrl": "https://www.wbhealth.gov.in/",
+          "lastUpdated": "2026-01-05T18:00:00.000Z"
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Ambulance",
+          "phone": "108"
+        },
+        {
+          "label": "State Control Room",
+          "phone": "104"
+        }
+      ]
+    }
+  ]
+}

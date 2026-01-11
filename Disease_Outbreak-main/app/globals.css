@@ -141,3 +141,38 @@
     min-height: 100vh;
   }
 }
+
+@layer utilities {
+  /* Text overflow handling for i18n */
+  .text-wrap-balance {
+    text-wrap: balance;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .text-ellipsis-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .text-ellipsis-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Ensure buttons and cards maintain size with different text lengths */
+  .min-w-fit-content {
+    min-width: fit-content;
+  }
+  
+  /* RTL support */
+  [dir="rtl"] {
+    direction: rtl;
+  }
+}

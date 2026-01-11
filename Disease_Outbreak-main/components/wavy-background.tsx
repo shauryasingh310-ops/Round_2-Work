@@ -2,6 +2,41 @@
 import { useEffect, useRef, useState } from "react"
 import { useTheme } from "next-themes"
 
+class Particle {
+    x: number
+    y: number
+    speed: number
+    amplitude: number
+    frequency: number
+    phase: number
+
+    constructor(width: number, height: number) {
+        this.x = Math.random() * width
+        this.y = Math.random() * height
+        this.speed = Math.random() * 0.5 + 0.2
+        this.amplitude = Math.random() * 20 + 10
+        this.frequency = Math.random() * 0.01 + 0.005
+        this.phase = Math.random() * Math.PI * 2
+    }
+
+    update(width: number, height: number) {
+        this.x += this.speed
+        if (this.x > width) {
+            this.x = 0
+        }
+        this.y += Math.sin(this.x * this.frequency + this.phase) * 0.5
+        if (this.y > height) this.y = 0
+        if (this.y < 0) this.y = height
+    }
+
+    draw(ctx: CanvasRenderingContext2D) {
+        ctx.beginPath()
+        ctx.fillStyle = "rgba(200, 255, 255, 0.4)" // Soft glow
+        ctx.arc(this.x, this.y, Math.random() * 2 + 1, 0, Math.PI * 2)
+        ctx.fill()
+    }
+}
+
 export const WavyBackground = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null)
     const [context, setContext] = useState<CanvasRenderingContext2D | null>(null)
@@ -26,42 +61,8 @@ export const WavyBackground = () => {
             const particles: Particle[] = []
             const particleCount = 100
 
-            class Particle {
-                x: number
-                y: number
-                speed: number
-                amplitude: number
-                frequency: number
-                phase: number
-
-                constructor() {
-                    this.x = Math.random() * canvas.width
-                    this.y = Math.random() * canvas.height
-                    this.speed = Math.random() * 0.5 + 0.2
-                    this.amplitude = Math.random() * 20 + 10
-                    this.frequency = Math.random() * 0.01 + 0.005
-                    this.phase = Math.random() * Math.PI * 2
-                }
-
-                update() {
-                    this.x += this.speed
-                    if (this.x > canvas.width) {
-                        this.x = 0
-                    }
-                    this.y += Math.sin(this.x * this.frequency + this.phase) * 0.5
-                }
-
-                draw() {
-                    if (!context) return
-                    context.beginPath()
-                    context.fillStyle = "rgba(200, 255, 255, 0.4)" // Soft glow
-                    context.arc(this.x, this.y, Math.random() * 2 + 1, 0, Math.PI * 2)
-                    context.fill()
-                }
-            }
-
             for (let i = 0; i < particleCount; i++) {
-                particles.push(new Particle())
+                particles.push(new Particle(canvas.width, canvas.height))
             }
 
             const drawWave = (yOffset: number, amplitude: number, frequency: number, phase: number, color: string) => {
@@ -87,8 +88,8 @@ export const WavyBackground = () => {
                 context.shadowColor = "rgba(100, 200, 255, 0.4)";
 
                 particles.forEach(particle => {
-                    particle.update()
-                    particle.draw()
+                    particle.update(canvas.width, canvas.height)
+                    particle.draw(context)
                 })
 
                 // Draw Mesh/Waves

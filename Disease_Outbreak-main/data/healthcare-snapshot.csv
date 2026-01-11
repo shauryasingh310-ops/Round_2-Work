@@ -1,0 +1,306 @@
+state,hospital,bedsAvailable,totalBeds,ventilatorsAvailable,resourcesDispatched,phoneLabel,phone,sourceUrl,lastUpdated
+Andhra Pradesh,Andhra Medical College Visakhapatnam,18,120,15,5,Ambulance,108,https://hmfw.ap.gov.in/,2026-01-05T18:00:00.000Z
+Andhra Pradesh,Guntur Medical College,16,110,14,4,Ambulance,108,https://hmfw.ap.gov.in/,2026-01-05T18:00:00.000Z
+Andhra Pradesh,Kurnool Medical College,14,100,12,4,Ambulance,108,https://hmfw.ap.gov.in/,2026-01-05T18:00:00.000Z
+Andhra Pradesh,Rangaraya Medical College Kakinada,12,90,10,3,Ambulance,108,https://hmfw.ap.gov.in/,2026-01-05T18:00:00.000Z
+Andhra Pradesh,Sri Venkateswara Medical College Tirupati,14,95,11,3,State Control Room,104,https://hmfw.ap.gov.in/,2026-01-05T18:00:00.000Z
+Andhra Pradesh,Government Medical College Anantapur,10,80,9,2,Ambulance,108,https://hmfw.ap.gov.in/,2026-01-05T18:00:00.000Z
+Andhra Pradesh,Government Medical College Ongole,9,70,8,2,Ambulance,108,https://hmfw.ap.gov.in/,2026-01-05T18:00:00.000Z
+Andhra Pradesh,Government Medical College Eluru,8,65,7,2,State Control Room,104,https://hmfw.ap.gov.in/,2026-01-05T18:00:00.000Z
+
+Arunachal Pradesh,Tomo Riba Institute Naharlagun,8,60,6,2,Ambulance,108,https://health.arunachal.gov.in/,2026-01-05T18:00:00.000Z
+Arunachal Pradesh,Ramakrishna Mission Hospital Itanagar,6,50,5,1,Ambulance,108,https://health.arunachal.gov.in/,2026-01-05T18:00:00.000Z
+Arunachal Pradesh,General Hospital Pasighat,5,40,4,1,State Control Room,104,https://health.arunachal.gov.in/,2026-01-05T18:00:00.000Z
+Arunachal Pradesh,General Hospital Tawang,4,30,3,1,Ambulance,108,https://health.arunachal.gov.in/,2026-01-05T18:00:00.000Z
+Arunachal Pradesh,General Hospital Ziro,4,30,3,1,Ambulance,108,https://health.arunachal.gov.in/,2026-01-05T18:00:00.000Z
+Arunachal Pradesh,General Hospital Bomdila,3,25,3,1,State Control Room,104,https://health.arunachal.gov.in/,2026-01-05T18:00:00.000Z
+Arunachal Pradesh,General Hospital Aalo,3,25,2,1,Ambulance,108,https://health.arunachal.gov.in/,2026-01-05T18:00:00.000Z
+Arunachal Pradesh,General Hospital Roing,3,25,2,1,Ambulance,108,https://health.arunachal.gov.in/,2026-01-05T18:00:00.000Z
+
+Assam,Assam Medical College Dibrugarh,12,40,8,3,State Control Room,1800-000-000,https://hfw.assam.gov.in/,2026-01-05T18:00:00.000Z
+Assam,Guwahati Medical College Hospital,18,60,10,4,Ambulance,108,https://hfw.assam.gov.in/,2026-01-05T18:00:00.000Z
+Assam,Silchar Medical College,15,50,8,3,Ambulance,108,https://hfw.assam.gov.in/,2026-01-05T18:00:00.000Z
+Assam,FAAMCH Barpeta,10,40,6,2,State Control Room,1800-000-000,https://hfw.assam.gov.in/,2026-01-05T18:00:00.000Z
+Assam,Tezpur Medical College,9,35,6,2,Ambulance,108,https://hfw.assam.gov.in/,2026-01-05T18:00:00.000Z
+Assam,Lakhimpur Medical College,8,30,5,2,Ambulance,108,https://hfw.assam.gov.in/,2026-01-05T18:00:00.000Z
+Assam,Nalbari Medical College,7,30,5,1,State Control Room,1800-000-000,https://hfw.assam.gov.in/,2026-01-05T18:00:00.000Z
+Assam,Kokrajhar Medical College,6,25,4,1,Ambulance,108,https://hfw.assam.gov.in/,2026-01-05T18:00:00.000Z
+
+Bihar,PMCH Patna,22,160,20,7,Ambulance,108,https://state.bihar.gov.in/health/,2026-01-05T18:00:00.000Z
+Bihar,NMCH Patna,18,140,16,6,Ambulance,108,https://state.bihar.gov.in/health/,2026-01-05T18:00:00.000Z
+Bihar,DMCH Darbhanga,16,120,14,5,State Control Room,104,https://state.bihar.gov.in/health/,2026-01-05T18:00:00.000Z
+Bihar,IGIMS Patna,14,110,12,4,Ambulance,108,https://state.bihar.gov.in/health/,2026-01-05T18:00:00.000Z
+Bihar,JLNMCH Bhagalpur,12,100,10,3,Ambulance,108,https://state.bihar.gov.in/health/,2026-01-05T18:00:00.000Z
+Bihar,SKMCH Muzaffarpur,12,95,10,3,Ambulance,108,https://state.bihar.gov.in/health/,2026-01-05T18:00:00.000Z
+Bihar,GMCH Bettiah,10,80,8,2,State Control Room,104,https://state.bihar.gov.in/health/,2026-01-05T18:00:00.000Z
+Bihar,VIMS Pawapuri,9,70,7,2,Ambulance,108,https://state.bihar.gov.in/health/,2026-01-05T18:00:00.000Z
+
+Chhattisgarh,AIIMS Raipur,24,170,22,8,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Mekahara Hospital Raipur,16,120,14,5,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Bilaspur Medical College,14,100,12,4,State Control Room,104,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Rajnandgaon Medical College,12,90,10,3,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Jagdalpur Medical College,10,80,8,2,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Ambikapur Medical College,9,70,7,2,State Control Room,104,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Kanker District Hospital,8,60,6,2,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Durg District Hospital,8,60,6,2,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+
+Goa,Goa Medical College Bambolim,12,90,10,3,Ambulance,108,https://www.goa.gov.in/health/,2026-01-05T18:00:00.000Z
+Goa,North Goa District Hospital,8,60,6,2,Ambulance,108,https://www.goa.gov.in/health/,2026-01-05T18:00:00.000Z
+Goa,South Goa District Hospital,8,60,6,2,State Control Room,104,https://www.goa.gov.in/health/,2026-01-05T18:00:00.000Z
+Goa,Asilo Hospital Mapusa,6,50,5,1,Ambulance,108,https://www.goa.gov.in/health/,2026-01-05T18:00:00.000Z
+Goa,Cottage Hospital Bicholim,5,40,4,1,Ambulance,108,https://www.goa.gov.in/health/,2026-01-05T18:00:00.000Z
+Goa,CHC Canacona,4,35,3,1,State Control Room,104,https://www.goa.gov.in/health/,2026-01-05T18:00:00.000Z
+Goa,CHC Pernem,4,35,3,1,Ambulance,108,https://www.goa.gov.in/health/,2026-01-05T18:00:00.000Z
+Goa,CHC Quepem,4,35,3,1,Ambulance,108,https://www.goa.gov.in/health/,2026-01-05T18:00:00.000Z
+
+Gujarat,Civil Hospital Ahmedabad,30,220,28,10,Ambulance,108,https://gujhealth.gujarat.gov.in/,2026-01-05T18:00:00.000Z
+Gujarat,SSG Hospital Vadodara,20,150,18,6,Ambulance,108,https://gujhealth.gujarat.gov.in/,2026-01-05T18:00:00.000Z
+Gujarat,New Civil Hospital Surat,18,140,16,5,Ambulance,108,https://gujhealth.gujarat.gov.in/,2026-01-05T18:00:00.000Z
+Gujarat,Civil Hospital Rajkot,16,120,14,4,State Control Room,104,https://gujhealth.gujarat.gov.in/,2026-01-05T18:00:00.000Z
+Gujarat,Civil Hospital Bhavnagar,14,110,12,4,Ambulance,108,https://gujhealth.gujarat.gov.in/,2026-01-05T18:00:00.000Z
+Gujarat,Civil Hospital Jamnagar,12,100,10,3,Ambulance,108,https://gujhealth.gujarat.gov.in/,2026-01-05T18:00:00.000Z
+Gujarat,Civil Hospital Junagadh,10,90,8,2,State Control Room,104,https://gujhealth.gujarat.gov.in/,2026-01-05T18:00:00.000Z
+Gujarat,Civil Hospital Gandhinagar,10,90,8,2,Ambulance,108,https://gujhealth.gujarat.gov.in/,2026-01-05T18:00:00.000Z
+
+Karnataka,Bangalore Medical College,28,160,22,8,Ambulance,108,https://karunadu.karnataka.gov.in/health/,2026-01-05T18:00:00.000Z
+Karnataka,Mysore Medical College,20,130,16,6,Ambulance,108,https://karunadu.karnataka.gov.in/health/,2026-01-05T18:00:00.000Z
+Karnataka,Hubli KIMS,16,110,14,5,State Control Room,104,https://karunadu.karnataka.gov.in/health/,2026-01-05T18:00:00.000Z
+Karnataka,Shimoga Medical College,14,100,12,4,Ambulance,108,https://karunadu.karnataka.gov.in/health/,2026-01-05T18:00:00.000Z
+Karnataka,Hassan Medical College,12,90,10,3,Ambulance,108,https://karunadu.karnataka.gov.in/health/,2026-01-05T18:00:00.000Z
+Karnataka,Raichur Medical College,10,80,8,2,State Control Room,104,https://karunadu.karnataka.gov.in/health/,2026-01-05T18:00:00.000Z
+Karnataka,Chamarajanagar Medical College,8,70,6,2,Ambulance,108,https://karunadu.karnataka.gov.in/health/,2026-01-05T18:00:00.000Z
+Karnataka,Gulbarga Institute of Medical Sciences,8,70,6,2,Ambulance,108,https://karunadu.karnataka.gov.in/health/,2026-01-05T18:00:00.000Z
+
+Kerala,Government Medical College Thiruvananthapuram,26,180,22,8,Ambulance,108,https://health.kerala.gov.in/,2026-01-05T18:00:00.000Z
+Kerala,Government Medical College Kozhikode,22,160,20,7,Ambulance,108,https://health.kerala.gov.in/,2026-01-05T18:00:00.000Z
+Kerala,Government Medical College Kottayam,18,140,16,6,Ambulance,108,https://health.kerala.gov.in/,2026-01-05T18:00:00.000Z
+Kerala,Government Medical College Thrissur,16,130,14,5,Ambulance,108,https://health.kerala.gov.in/,2026-01-05T18:00:00.000Z
+Kerala,Government Medical College Alappuzha,14,120,12,4,State Control Room,1056,https://health.kerala.gov.in/,2026-01-05T18:00:00.000Z
+Kerala,Government Medical College Manjeri,12,100,10,3,Ambulance,108,https://health.kerala.gov.in/,2026-01-05T18:00:00.000Z
+Kerala,Government Medical College Kannur,10,90,8,2,Ambulance,108,https://health.kerala.gov.in/,2026-01-05T18:00:00.000Z
+Kerala,Government Medical College Idukki,8,70,6,2,Ambulance,108,https://health.kerala.gov.in/,2026-01-05T18:00:00.000Z
+
+Tamil Nadu,Rajiv Gandhi Government General Hospital Chennai,32,220,28,10,Ambulance,108,http://www.tnhealth.tn.gov.in/,2026-01-05T18:00:00.000Z
+Tamil Nadu,Stanley Medical College Chennai,26,180,22,8,Ambulance,108,http://www.tnhealth.tn.gov.in/,2026-01-05T18:00:00.000Z
+Tamil Nadu,Madurai Medical College,22,160,20,7,Ambulance,108,http://www.tnhealth.tn.gov.in/,2026-01-05T18:00:00.000Z
+Tamil Nadu,Coimbatore Medical College,20,150,18,6,Ambulance,108,http://www.tnhealth.tn.gov.in/,2026-01-05T18:00:00.000Z
+Tamil Nadu,Thanjavur Medical College,18,140,16,5,Ambulance,108,http://www.tnhealth.tn.gov.in/,2026-01-05T18:00:00.000Z
+Tamil Nadu,Tirunelveli Medical College,16,130,14,4,Ambulance,108,http://www.tnhealth.tn.gov.in/,2026-01-05T18:00:00.000Z
+Tamil Nadu,Salem Medical College,14,120,12,4,State Control Room,104,http://www.tnhealth.tn.gov.in/,2026-01-05T18:00:00.000Z
+Tamil Nadu,Vellore Medical College,12,110,10,3,Ambulance,108,http://www.tnhealth.tn.gov.in/,2026-01-05T18:00:00.000Z
+
+West Bengal,SSKM Hospital Kolkata,30,210,26,9,Ambulance,108,https://www.wbhealth.gov.in/,2026-01-05T18:00:00.000Z
+West Bengal,NRS Medical College Kolkata,26,190,22,8,Ambulance,108,https://www.wbhealth.gov.in/,2026-01-05T18:00:00.000Z
+West Bengal,Medical College Kolkata,24,180,20,7,Ambulance,108,https://www.wbhealth.gov.in/,2026-01-05T18:00:00.000Z
+West Bengal,RG Kar Medical College,22,170,18,6,Ambulance,108,https://www.wbhealth.gov.in/,2026-01-05T18:00:00.000Z
+West Bengal,North Bengal Medical College,18,150,16,5,Ambulance,108,https://www.wbhealth.gov.in/,2026-01-05T18:00:00.000Z
+West Bengal,Burdwan Medical College,16,140,14,4,State Control Room,104,https://www.wbhealth.gov.in/,2026-01-05T18:00:00.000Z
+West Bengal,Bankura Sammilani Medical College,14,120,12,4,Ambulance,108,https://www.wbhealth.gov.in/,2026-01-05T18:00:00.000Z
+West Bengal,Malda Medical College,12,110,10,3,Ambulance,108,https://www.wbhealth.gov.in/,2026-01-05T18:00:00.000Z
+
+Haryana,PGIMS Rohtak,20,140,16,6,Ambulance,108,https://haryanahealth.nic.in/,2026-01-05T18:00:00.000Z
+Haryana,ESIC Medical College Faridabad,16,120,14,5,Ambulance,108,https://haryanahealth.nic.in/,2026-01-05T18:00:00.000Z
+Haryana,Civil Hospital Gurugram,14,100,12,4,Ambulance,108,https://haryanahealth.nic.in/,2026-01-05T18:00:00.000Z
+Haryana,Civil Hospital Panipat,12,90,10,3,State Control Room,104,https://haryanahealth.nic.in/,2026-01-05T18:00:00.000Z
+Haryana,Civil Hospital Hisar,12,90,10,3,Ambulance,108,https://haryanahealth.nic.in/,2026-01-05T18:00:00.000Z
+Haryana,Civil Hospital Karnal,10,80,8,2,Ambulance,108,https://haryanahealth.nic.in/,2026-01-05T18:00:00.000Z
+Haryana,Civil Hospital Sonipat,10,80,8,2,State Control Room,104,https://haryanahealth.nic.in/,2026-01-05T18:00:00.000Z
+Haryana,Civil Hospital Yamunanagar,8,70,6,2,Ambulance,108,https://haryanahealth.nic.in/,2026-01-05T18:00:00.000Z
+
+Himachal Pradesh,IGMC Shimla,12,90,10,3,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Dr RPGMC Tanda,10,80,8,3,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Zonal Hospital Dharamshala,8,70,6,2,State Control Room,104,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Zonal Hospital Hamirpur,8,70,6,2,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Civil Hospital Solan,6,60,5,1,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Civil Hospital Una,6,60,5,1,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Civil Hospital Mandi,6,60,5,1,State Control Room,104,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Civil Hospital Nahan,6,60,5,1,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+
+Madhya Pradesh,Hamidia Hospital Bhopal,24,170,22,8,Ambulance,108,https://health.mp.gov.in/,2026-01-05T18:00:00.000Z
+Madhya Pradesh,MGM Medical College Indore,22,160,20,7,Ambulance,108,https://health.mp.gov.in/,2026-01-05T18:00:00.000Z
+Madhya Pradesh,Gandhi Medical College Bhopal,20,150,18,6,Ambulance,108,https://health.mp.gov.in/,2026-01-05T18:00:00.000Z
+Madhya Pradesh,NSCB Medical College Jabalpur,18,140,16,5,Ambulance,108,https://health.mp.gov.in/,2026-01-05T18:00:00.000Z
+Madhya Pradesh,Gajra Raja Medical College Gwalior,16,130,14,4,State Control Room,104,https://health.mp.gov.in/,2026-01-05T18:00:00.000Z
+Madhya Pradesh,Bundelkhand Medical College Sagar,14,120,12,4,Ambulance,108,https://health.mp.gov.in/,2026-01-05T18:00:00.000Z
+Madhya Pradesh,Shyam Shah Medical College Rewa,12,110,10,3,Ambulance,108,https://health.mp.gov.in/,2026-01-05T18:00:00.000Z
+Madhya Pradesh,Government Medical College Ratlam,10,100,8,2,Ambulance,108,https://health.mp.gov.in/,2026-01-05T18:00:00.000Z
+
+Maharashtra,KEM Hospital Mumbai,32,240,28,10,Ambulance,108,https://www.maharashtra.gov.in/,2026-01-05T18:00:00.000Z
+Maharashtra,Nair Hospital Mumbai,28,200,24,9,Ambulance,108,https://www.maharashtra.gov.in/,2026-01-05T18:00:00.000Z
+Maharashtra,JJ Hospital Mumbai,26,190,22,8,Ambulance,108,https://www.maharashtra.gov.in/,2026-01-05T18:00:00.000Z
+Maharashtra,Sassoon Hospital Pune,24,180,20,7,Ambulance,108,https://www.maharashtra.gov.in/,2026-01-05T18:00:00.000Z
+Maharashtra,Government Medical College Nagpur,22,170,18,6,Ambulance,108,https://www.maharashtra.gov.in/,2026-01-05T18:00:00.000Z
+Maharashtra,Government Medical College Aurangabad,20,160,16,5,State Control Room,104,https://www.maharashtra.gov.in/,2026-01-05T18:00:00.000Z
+Maharashtra,Government Medical College Kolhapur,18,150,14,4,Ambulance,108,https://www.maharashtra.gov.in/,2026-01-05T18:00:00.000Z
+Maharashtra,Government Medical College Solapur,16,140,12,4,Ambulance,108,https://www.maharashtra.gov.in/,2026-01-05T18:00:00.000Z
+
+Odisha,SCB Medical College Cuttack,26,190,22,8,Ambulance,108,https://health.odisha.gov.in/,2026-01-05T18:00:00.000Z
+Odisha,AIIMS Bhubaneswar,24,180,20,7,Ambulance,108,https://health.odisha.gov.in/,2026-01-05T18:00:00.000Z
+Odisha,VIMSAR Burla,20,160,18,6,Ambulance,108,https://health.odisha.gov.in/,2026-01-05T18:00:00.000Z
+Odisha,MKCG Medical College Berhampur,18,150,16,5,Ambulance,108,https://health.odisha.gov.in/,2026-01-05T18:00:00.000Z
+Odisha,FM Medical College Balasore,16,140,14,4,Ambulance,108,https://health.odisha.gov.in/,2026-01-05T18:00:00.000Z
+Odisha,SLN Medical College Koraput,14,120,12,4,State Control Room,104,https://health.odisha.gov.in/,2026-01-05T18:00:00.000Z
+Odisha,Pandit Raghunath Murmu Medical College Baripada,12,110,10,3,Ambulance,108,https://health.odisha.gov.in/,2026-01-05T18:00:00.000Z
+Odisha,GMC Sundargarh,10,100,8,2,Ambulance,108,https://health.odisha.gov.in/,2026-01-05T18:00:00.000Z
+
+Manipur,RIMS Imphal,14,120,12,4,Ambulance,108,https://healthmanipur.gov.in/,2026-01-05T18:00:00.000Z
+Manipur,JNIMS Imphal,12,100,10,3,Ambulance,108,https://healthmanipur.gov.in/,2026-01-05T18:00:00.000Z
+Manipur,Churachandpur District Hospital,8,60,6,2,State Control Room,104,https://healthmanipur.gov.in/,2026-01-05T18:00:00.000Z
+Manipur,Thoubal District Hospital,8,60,6,2,Ambulance,108,https://healthmanipur.gov.in/,2026-01-05T18:00:00.000Z
+Manipur,Bishnupur District Hospital,6,50,5,1,Ambulance,108,https://healthmanipur.gov.in/,2026-01-05T18:00:00.000Z
+Manipur,Ukhrul District Hospital,6,50,5,1,State Control Room,104,https://healthmanipur.gov.in/,2026-01-05T18:00:00.000Z
+Manipur,Senapati District Hospital,6,50,5,1,Ambulance,108,https://healthmanipur.gov.in/,2026-01-05T18:00:00.000Z
+Manipur,Imphal East District Hospital,6,50,5,1,Ambulance,108,https://healthmanipur.gov.in/,2026-01-05T18:00:00.000Z
+
+Meghalaya,NEIGRIHMS Shillong,16,130,14,5,Ambulance,108,https://meghealth.gov.in/,2026-01-05T18:00:00.000Z
+Meghalaya,Shillong Civil Hospital,12,100,10,3,Ambulance,108,https://meghealth.gov.in/,2026-01-05T18:00:00.000Z
+Meghalaya,Tura District Hospital,8,70,6,2,State Control Room,104,https://meghealth.gov.in/,2026-01-05T18:00:00.000Z
+Meghalaya,Jowai Civil Hospital,8,70,6,2,Ambulance,108,https://meghealth.gov.in/,2026-01-05T18:00:00.000Z
+Meghalaya,Nongpoh Civil Hospital,6,60,5,1,Ambulance,108,https://meghealth.gov.in/,2026-01-05T18:00:00.000Z
+Meghalaya,Williamnagar Civil Hospital,6,60,5,1,State Control Room,104,https://meghealth.gov.in/,2026-01-05T18:00:00.000Z
+Meghalaya,Khliehriat Civil Hospital,6,60,5,1,Ambulance,108,https://meghealth.gov.in/,2026-01-05T18:00:00.000Z
+Meghalaya,Mawkyrwat Civil Hospital,6,60,5,1,Ambulance,108,https://meghealth.gov.in/,2026-01-05T18:00:00.000Z
+
+Mizoram,Zoram Medical College Falkawn,14,110,12,4,Ambulance,108,https://health.mizoram.gov.in/,2026-01-05T18:00:00.000Z
+Mizoram,Aizawl Civil Hospital,10,90,8,3,Ambulance,108,https://health.mizoram.gov.in/,2026-01-05T18:00:00.000Z
+Mizoram,Lunglei Civil Hospital,8,70,6,2,State Control Room,104,https://health.mizoram.gov.in/,2026-01-05T18:00:00.000Z
+Mizoram,Champhai Civil Hospital,6,60,5,1,Ambulance,108,https://health.mizoram.gov.in/,2026-01-05T18:00:00.000Z
+Mizoram,Kolasib Civil Hospital,6,60,5,1,Ambulance,108,https://health.mizoram.gov.in/,2026-01-05T18:00:00.000Z
+Mizoram,Serchhip Civil Hospital,6,60,5,1,State Control Room,104,https://health.mizoram.gov.in/,2026-01-05T18:00:00.000Z
+Mizoram,Lawngtlai Civil Hospital,6,60,5,1,Ambulance,108,https://health.mizoram.gov.in/,2026-01-05T18:00:00.000Z
+Mizoram,Saitual Civil Hospital,6,60,5,1,Ambulance,108,https://health.mizoram.gov.in/,2026-01-05T18:00:00.000Z
+
+Nagaland,Naga Hospital Kohima,12,100,10,3,Ambulance,108,https://health.nagaland.gov.in/,2026-01-05T18:00:00.000Z
+Nagaland,Dimapur District Hospital,10,90,8,3,Ambulance,108,https://health.nagaland.gov.in/,2026-01-05T18:00:00.000Z
+Nagaland,Mokokchung District Hospital,8,70,6,2,State Control Room,104,https://health.nagaland.gov.in/,2026-01-05T18:00:00.000Z
+Nagaland,Wokha District Hospital,6,60,5,1,Ambulance,108,https://health.nagaland.gov.in/,2026-01-05T18:00:00.000Z
+Nagaland,Tuensang District Hospital,6,60,5,1,Ambulance,108,https://health.nagaland.gov.in/,2026-01-05T18:00:00.000Z
+Nagaland,Zunheboto District Hospital,6,60,5,1,State Control Room,104,https://health.nagaland.gov.in/,2026-01-05T18:00:00.000Z
+Nagaland,Phek District Hospital,6,60,5,1,Ambulance,108,https://health.nagaland.gov.in/,2026-01-05T18:00:00.000Z
+Nagaland,Mon District Hospital,6,60,5,1,Ambulance,108,https://health.nagaland.gov.in/,2026-01-05T18:00:00.000Z
+
+Jharkhand,RIMS Ranchi,16,120,14,5,Ambulance,108,https://health.jharkhand.gov.in/,2026-01-05T18:00:00.000Z
+Jharkhand,CMCH Ranchi,14,100,12,4,Ambulance,108,https://health.jharkhand.gov.in/,2026-01-05T18:00:00.000Z
+Jharkhand,Sadar Hospital Bokaro,12,90,10,3,State Control Room,104,https://health.jharkhand.gov.in/,2026-01-05T18:00:00.000Z
+Jharkhand,Patliputra Medical College Hazaribagh,10,80,8,2,Ambulance,108,https://health.jharkhand.gov.in/,2026-01-05T18:00:00.000Z
+Jharkhand,Giridih District Hospital,10,80,8,2,Ambulance,108,https://health.jharkhand.gov.in/,2026-01-05T18:00:00.000Z
+Jharkhand,Dumka District Hospital,8,70,6,2,State Control Room,104,https://health.jharkhand.gov.in/,2026-01-05T18:00:00.000Z
+Jharkhand,Jamtara District Hospital,8,70,6,2,Ambulance,108,https://health.jharkhand.gov.in/,2026-01-05T18:00:00.000Z
+Jharkhand,Deoghar District Hospital,8,70,6,2,Ambulance,108,https://health.jharkhand.gov.in/,2026-01-05T18:00:00.000Z
+
+Tripura,Agartala Government Medical College,12,90,10,3,Ambulance,108,https://tripurahealth.gov.in/,2026-01-05T18:00:00.000Z
+Tripura,Gobind Ballabh Pant Hospital,10,80,8,3,State Control Room,104,https://tripurahealth.gov.in/,2026-01-05T18:00:00.000Z
+Tripura,Agartala Civil Hospital,8,70,6,2,Ambulance,108,https://tripurahealth.gov.in/,2026-01-05T18:00:00.000Z
+Tripura,Udaipur District Hospital,8,70,6,2,Ambulance,108,https://tripurahealth.gov.in/,2026-01-05T18:00:00.000Z
+Tripura,Kailasahar District Hospital,6,60,5,1,State Control Room,104,https://tripurahealth.gov.in/,2026-01-05T18:00:00.000Z
+Tripura,Bishalgarh District Hospital,6,60,5,1,Ambulance,108,https://tripurahealth.gov.in/,2026-01-05T18:00:00.000Z
+Tripura,Teliamura CHC,6,60,5,1,Ambulance,108,https://tripurahealth.gov.in/,2026-01-05T18:00:00.000Z
+Tripura,Ambassa CHC,6,60,5,1,State Control Room,104,https://tripurahealth.gov.in/,2026-01-05T18:00:00.000Z
+
+Uttarakhand,AIIMS Rishikesh,20,140,16,6,Ambulance,108,https://health.uk.gov.in/,2026-01-05T18:00:00.000Z
+Uttarakhand,GMC Haldwani,16,120,14,5,Ambulance,108,https://health.uk.gov.in/,2026-01-05T18:00:00.000Z
+Uttarakhand,Doon Medical College Dehradun,14,100,12,4,State Control Room,104,https://health.uk.gov.in/,2026-01-05T18:00:00.000Z
+Uttarakhand,GMCH Rishikesh,12,90,10,3,Ambulance,108,https://health.uk.gov.in/,2026-01-05T18:00:00.000Z
+Uttarakhand,Civil Hospital Haridwar,12,90,10,3,Ambulance,108,https://health.uk.gov.in/,2026-01-05T18:00:00.000Z
+Uttarakhand,CHC Dehradun,10,80,8,2,State Control Room,104,https://health.uk.gov.in/,2026-01-05T18:00:00.000Z
+Uttarakhand,CHC Almora,8,70,6,2,Ambulance,108,https://health.uk.gov.in/,2026-01-05T18:00:00.000Z
+Uttarakhand,CHC Nainital,8,70,6,2,Ambulance,108,https://health.uk.gov.in/,2026-01-05T18:00:00.000Z
+
+Himachal Pradesh,IGMC Shimla,12,90,10,3,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Dr RPGMC Tanda,10,80,8,3,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Zonal Hospital Dharamshala,8,70,6,2,State Control Room,104,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Zonal Hospital Hamirpur,8,70,6,2,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Civil Hospital Solan,6,60,5,1,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Civil Hospital Una,6,60,5,1,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Civil Hospital Mandi,6,60,5,1,State Control Room,104,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+Himachal Pradesh,Civil Hospital Nahan,6,60,5,1,Ambulance,108,https://himachal.nic.in/health/,2026-01-05T18:00:00.000Z
+
+Chhattisgarh,AIIMS Raipur,24,170,22,8,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Mekahara Hospital Raipur,16,120,14,5,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Bilaspur Medical College,14,100,12,4,State Control Room,104,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Rajnandgaon Medical College,12,90,10,3,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Jagdalpur Medical College,10,80,8,2,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Ambikapur Medical College,9,70,7,2,State Control Room,104,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Kanker District Hospital,8,60,6,2,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+Chhattisgarh,Durg District Hospital,8,60,6,2,Ambulance,108,https://health.cg.gov.in/,2026-01-05T18:00:00.000Z
+
+Sikkim,STNM Gangtok,12,90,10,3,Ambulance,108,https://health.sikkim.gov.in/,2026-01-05T18:00:00.000Z
+Sikkim,Sikkim Manipal Hospital,10,80,8,3,State Control Room,104,https://health.sikkim.gov.in/,2026-01-05T18:00:00.000Z
+Sikkim,Central Referral Hospital,8,70,6,2,Ambulance,108,https://health.sikkim.gov.in/,2026-01-05T18:00:00.000Z
+Sikkim,Ravangla District Hospital,8,70,6,2,Ambulance,108,https://health.sikkim.gov.in/,2026-01-05T18:00:00.000Z
+Sikkim,Gangtok District Hospital,6,60,5,1,State Control Room,104,https://health.sikkim.gov.in/,2026-01-05T18:00:00.000Z
+Sikkim,Namchi Civil Hospital,6,60,5,1,Ambulance,108,https://health.sikkim.gov.in/,2026-01-05T18:00:00.000Z
+Sikkim,Gyalshing CHC,6,60,5,1,Ambulance,108,https://health.sikkim.gov.in/,2026-01-05T18:00:00.000Z
+Sikkim,Pelling CHC,6,60,5,1,State Control Room,104,https://health.sikkim.gov.in/,2026-01-05T18:00:00.000Z
+
+Chandigarh,PGIMER Chandigarh,12,90,10,3,Ambulance,108,https://chdhealth.gov.in/,2026-01-05T18:00:00.000Z
+Chandigarh,Government Multi Speciality Hospital,10,80,8,3,State Control Room,104,https://chdhealth.gov.in/,2026-01-05T18:00:00.000Z
+Chandigarh,City Hospital Chandigarh,8,70,6,2,Ambulance,108,https://chdhealth.gov.in/,2026-01-05T18:00:00.000Z
+Chandigarh,PGI Satellite Centre,8,70,6,2,Ambulance,108,https://chdhealth.gov.in/,2026-01-05T18:00:00.000Z
+Chandigarh,Government Hospital Sector 16,6,60,5,1,State Control Room,104,https://chdhealth.gov.in/,2026-01-05T18:00:00.000Z
+Chandigarh,Government Hospital Sector 22,6,60,5,1,Ambulance,108,https://chdhealth.gov.in/,2026-01-05T18:00:00.000Z
+Chandigarh,Government Hospital Sector 32,6,60,5,1,Ambulance,108,https://chdhealth.gov.in/,2026-01-05T18:00:00.000Z
+Chandigarh,Government Hospital Sector 44,6,60,5,1,State Control Room,104,https://chdhealth.gov.in/,2026-01-05T18:00:00.000Z
+
+Telangana,Osmania General Hospital Hyderabad,24,180,20,7,Ambulance,108,https://telanganahealth.gov.in/,2026-01-05T18:00:00.000Z
+Telangana,Nizam's Institute of Medical Sciences Hyderabad,22,160,18,6,Ambulance,108,https://telanganahealth.gov.in/,2026-01-05T18:00:00.000Z
+Telangana,Government General Hospital Koti,20,140,16,5,State Control Room,104,https://telanganahealth.gov.in/,2026-01-05T18:00:00.000Z
+Telangana,Kakatiya Medical College Warangal,18,120,14,4,Ambulance,108,https://telanganahealth.gov.in/,2026-01-05T18:00:00.000Z
+Telangana,Medical College Mahbubnagar,16,100,12,3,Ambulance,108,https://telanganahealth.gov.in/,2026-01-05T18:00:00.000Z
+Telangana,Government Hospital Karimnagar,14,90,10,3,State Control Room,104,https://telanganahealth.gov.in/,2026-01-05T18:00:00.000Z
+Telangana,Govt. Hospital Nizamabad,12,80,8,2,Ambulance,108,https://telanganahealth.gov.in/,2026-01-05T18:00:00.000Z
+Telangana,General Hospital Ramagundam,12,80,8,2,Ambulance,108,https://telanganahealth.gov.in/,2026-01-05T18:00:00.000Z
+
+Andaman & Nicobar Islands,Govt. Hospital Port Blair,12,90,10,3,Ambulance,108,https://andamanhealth.gov.in/,2026-01-05T18:00:00.000Z
+Andaman & Nicobar Islands,GB Pant Hospital,10,80,8,3,State Control Room,104,https://andamanhealth.gov.in/,2026-01-05T18:00:00.000Z
+Andaman & Nicobar Islands,Chatham Hospital,8,70,6,2,Ambulance,108,https://andamanhealth.gov.in/,2026-01-05T18:00:00.000Z
+Andaman & Nicobar Islands,Rangat District Hospital,8,70,6,2,Ambulance,108,https://andamanhealth.gov.in/,2026-01-05T18:00:00.000Z
+Andaman & Nicobar Islands,Hut Bay Hospital,6,60,5,1,State Control Room,104,https://andamanhealth.gov.in/,2026-01-05T18:00:00.000Z
+Andaman & Nicobar Islands,Mayabunder Hospital,6,60,5,1,Ambulance,108,https://andamanhealth.gov.in/,2026-01-05T18:00:00.000Z
+Andaman & Nicobar Islands,Diglipur Hospital,6,60,5,1,Ambulance,108,https://andamanhealth.gov.in/,2026-01-05T18:00:00.000Z
+Andaman & Nicobar Islands,Havelock Hospital,6,60,5,1,State Control Room,104,https://andamanhealth.gov.in/,2026-01-05T18:00:00.000Z
+
+Dadra & Nagar Haveli and Daman & Diu,Dadra Hospital,10,80,8,3,Ambulance,108,https://dnh.gov.in/health,2026-01-05T18:00:00.000Z
+Dadra & Nagar Haveli and Daman & Diu,Daman Hospital,10,80,8,3,State Control Room,104,https://dnh.gov.in/health,2026-01-05T18:00:00.000Z
+Dadra & Nagar Haveli and Daman & Diu,Silvassa Hospital,8,70,6,2,Ambulance,108,https://dnh.gov.in/health,2026-01-05T18:00:00.000Z
+Dadra & Nagar Haveli and Daman & Diu,Diu Hospital,8,70,6,2,Ambulance,108,https://dnh.gov.in/health,2026-01-05T18:00:00.000Z
+Dadra & Nagar Haveli and Daman & Diu,Ambli Hospital,6,60,5,1,State Control Room,104,https://dnh.gov.in/health,2026-01-05T18:00:00.000Z
+Dadra & Nagar Haveli and Daman & Diu,Khanvel CHC,6,60,5,1,Ambulance,108,https://dnh.gov.in/health,2026-01-05T18:00:00.000Z
+Dadra & Nagar Haveli and Daman & Diu,Udvada Hospital,6,60,5,1,Ambulance,108,https://dnh.gov.in/health,2026-01-05T18:00:00.000Z
+Dadra & Nagar Haveli and Daman & Diu,Nani Daman Hospital,6,60,5,1,State Control Room,104,https://dnh.gov.in/health,2026-01-05T18:00:00.000Z
+
+Lakshadweep,Lakshadweep Hospital Kavaratti,10,80,8,3,Ambulance,108,https://health.lakshadweep.gov.in/,2026-01-05T18:00:00.000Z
+Lakshadweep,Minicoy Hospital,8,70,6,2,State Control Room,104,https://health.lakshadweep.gov.in/,2026-01-05T18:00:00.000Z
+Lakshadweep,Amini Hospital,8,70,6,2,Ambulance,108,https://health.lakshadweep.gov.in/,2026-01-05T18:00:00.000Z
+Lakshadweep,Kavaratti CHC,6,60,5,1,Ambulance,108,https://health.lakshadweep.gov.in/,2026-01-05T18:00:00.000Z
+Lakshadweep,Kiltan CHC,6,60,5,1,State Control Room,104,https://health.lakshadweep.gov.in/,2026-01-05T18:00:00.000Z
+Lakshadweep,Chetlat CHC,6,60,5,1,Ambulance,108,https://health.lakshadweep.gov.in/,2026-01-05T18:00:00.000Z
+Lakshadweep,Bangaram CHC,6,60,5,1,Ambulance,108,https://health.lakshadweep.gov.in/,2026-01-05T18:00:00.000Z
+Lakshadweep,Kadmat CHC,6,60,5,1,State Control Room,104,https://health.lakshadweep.gov.in/,2026-01-05T18:00:00.000Z
+
+Puducherry,Jawaharlal Institute of Postgraduate Medical Education & Research,12,90,10,3,Ambulance,108,https://health.py.gov.in/,2026-01-05T18:00:00.000Z
+Puducherry,Indira Gandhi Government General Hospital,10,80,8,3,State Control Room,104,https://health.py.gov.in/,2026-01-05T18:00:00.000Z
+Puducherry,Goubert Hospital,8,70,6,2,Ambulance,108,https://health.py.gov.in/,2026-01-05T18:00:00.000Z
+Puducherry,Ariyankuppam CHC,8,70,6,2,Ambulance,108,https://health.py.gov.in/,2026-01-05T18:00:00.000Z
+Puducherry,Karaikal Hospital,6,60,5,1,State Control Room,104,https://health.py.gov.in/,2026-01-05T18:00:00.000Z
+Puducherry,Mahe Hospital,6,60,5,1,Ambulance,108,https://health.py.gov.in/,2026-01-05T18:00:00.000Z
+Puducherry,Yanam Hospital,6,60,5,1,Ambulance,108,https://health.py.gov.in/,2026-01-05T18:00:00.000Z
+Puducherry,Thirubuvanai CHC,6,60,5,1,State Control Room,104,https://health.py.gov.in/,2026-01-05T18:00:00.000Z
+
+Jammu & Kashmir,SMHS Srinagar,24,180,20,7,Ambulance,108,https://jkhealth.gov.in/,2026-01-05T18:00:00.000Z
+Jammu & Kashmir,GMC Jammu,22,160,18,6,Ambulance,108,https://jkhealth.gov.in/,2026-01-05T18:00:00.000Z
+Jammu & Kashmir,District Hospital Anantnag,20,140,16,5,State Control Room,104,https://jkhealth.gov.in/,2026-01-05T18:00:00.000Z
+Jammu & Kashmir,District Hospital Baramulla,18,120,14,4,Ambulance,108,https://jkhealth.gov.in/,2026-01-05T18:00:00.000Z
+Jammu & Kashmir,District Hospital Udhampur,16,100,12,3,Ambulance,108,https://jkhealth.gov.in/,2026-01-05T18:00:00.000Z
+Jammu & Kashmir,District Hospital Kulgam,14,90,10,2,State Control Room,104,https://jkhealth.gov.in/,2026-01-05T18:00:00.000Z
+Jammu & Kashmir,District Hospital Pulwama,12,80,8,2,Ambulance,108,https://jkhealth.gov.in/,2026-01-05T18:00:00.000Z
+Jammu & Kashmir,District Hospital Kathua,12,80,8,2,Ambulance,108,https://jkhealth.gov.in/,2026-01-05T18:00:00.000Z
+
+Ladakh,Dr. Ram Manohar Lohia Hospital Leh,12,90,10,3,Ambulance,108,https://ladakhhealth.gov.in/,2026-01-05T18:00:00.000Z
+Ladakh,Leh District Hospital,10,80,8,3,State Control Room,104,https://ladakhhealth.gov.in/,2026-01-05T18:00:00.000Z
+Ladakh,Kargil District Hospital,8,70,6,2,Ambulance,108,https://ladakhhealth.gov.in/,2026-01-05T18:00:00.000Z
+Ladakh,Sub District Hospital Nubra,8,70,6,2,Ambulance,108,https://ladakhhealth.gov.in/,2026-01-05T18:00:00.000Z
+Ladakh,Sub District Hospital Zanskar,6,60,5,1,State Control Room,104,https://ladakhhealth.gov.in/,2026-01-05T18:00:00.000Z
+Ladakh,Sub District Hospital Khaltsi,6,60,5,1,Ambulance,108,https://ladakhhealth.gov.in/,2026-01-05T18:00:00.000Z
+Ladakh,Sub District Hospital Nyoma,6,60,5,1,Ambulance,108,https://ladakhhealth.gov.in/,2026-01-05T18:00:00.000Z
+Ladakh,Sub District Hospital Diskit,6,60,5,1,State Control Room,104,https://ladakhhealth.gov.in/,2026-01-05T18:00:00.000Z
